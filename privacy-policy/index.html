@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perusa — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #fbfbfc;
+    --ink: #1c2530;
+    --muted: #5a6875;
+    --accent: #0891b2;
+    --rule: #e3e7ea;
+    --card: #f0f4f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12181e;
+      --ink: #e2e8ee;
+      --muted: #93a1ad;
+      --accent: #22d3ee;
+      --rule: #263038;
+      --card: #1a222a;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 Georgia, 'Times New Roman', serif;
+    padding: 3rem 1.25rem 5rem;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  .brand {
+    display: flex; align-items: center; gap: .6rem;
+    font-family: system-ui, sans-serif;
+    margin-bottom: 2.5rem;
+  }
+  .brand svg { flex: none; }
+  .brand span { font-size: 1.05rem; font-weight: 600; letter-spacing: .02em; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .4rem; text-wrap: balance; }
+  .effective { color: var(--muted); font-family: system-ui, sans-serif; font-size: .85rem; margin-bottom: 2rem; }
+  .tldr {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.2rem;
+    margin-bottom: 2.2rem;
+    border-radius: 0 6px 6px 0;
+  }
+  h2 {
+    font-family: system-ui, sans-serif;
+    font-size: 1.15rem;
+    margin: 2.2rem 0 .8rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+  }
+  p { margin-bottom: 1rem; }
+  ul { margin: 0 0 1rem 1.4rem; }
+  li { margin-bottom: .55rem; }
+  strong { font-weight: 700; }
+  a { color: var(--accent); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: system-ui, sans-serif;
+    font-size: .88rem;
+    margin-bottom: 1rem;
+  }
+  th, td { text-align: left; padding: .55rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+      <circle cx="14" cy="14" r="11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <circle cx="21" cy="7" r="4.5" fill="#22d3ee"/>
+    </svg>
+    <span>Perusa</span>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective date: July 27, 2026</p>
+
+  <div class="tldr">
+    <p style="margin-bottom:0">Perusa is a comfort aid that shows visual motion cues over other
+    apps while you ride in a vehicle. The short version: <strong>nothing leaves your device
+    unless you explicitly turn on sharing, and your location never leaves it at all.</strong></p>
+  </div>
+
+  <h2>Data the app uses on your device</h2>
+  <ul>
+    <li><strong>Motion sensors</strong> (accelerometer, gyroscope, rotation): read continuously
+      while the cues run, used only to move the cues. Not recorded, not transmitted.</li>
+    <li><strong>Location (GPS)</strong>: used only to compute your <strong>speed</strong>, so cues
+      appear only when you are actually riding in a vehicle. Speed is processed in memory. Your
+      <strong>position is never stored and never transmitted</strong> — the app has no server-side
+      knowledge of where you are or where you have been.</li>
+    <li><strong>Foreground app package name</strong> (optional): if you grant Usage Access for the
+      auto-pause feature, Perusa checks which app is in front so it can pause cues over apps you
+      choose (password managers, banking). This check happens on-device; nothing is stored or
+      sent.</li>
+    <li><strong>Settings and drive history</strong>: your preferences, drive ratings, and tuning
+      profile are stored in the app's private storage on your device only.</li>
+  </ul>
+
+  <h2>Data the app sends — only if you opt in</h2>
+  <p>Sharing is <strong>off by default</strong>. If you turn on "Share anonymous drive data" in
+  settings, Perusa uploads:</p>
+  <ul>
+    <li>drive summaries (duration, distance, a motion-intensity score, your comfort rating,
+      active tuning parameters, cue intensity),</li>
+    <li>crash and device-compatibility reports (Android version, device model, app version).</li>
+  </ul>
+  <p>These are linked to a <strong>random install identifier</strong> generated on first run —
+  not your name, email, phone number, advertising ID, or any hardware identifier.
+  <strong>No location data (positions, routes, or coordinates) is ever included.</strong> The
+  receiving server does not log IP addresses. Turning sharing off stops all uploads
+  immediately.</p>
+  <p>If the optional road-test diagnostics logging is enabled together with sharing, detailed
+  motion sensor logs (acceleration signals and speed over time — still no positions) are uploaded
+  for debugging the cue engine.</p>
+
+  <h2>What Perusa does not do</h2>
+  <ul>
+    <li>No accounts. Nothing to sign up for, nothing to delete on a server.</li>
+    <li>No ads, no analytics SDKs, no trackers, no third-party data sharing of any kind.</li>
+    <li>No sale of data — there is nothing to sell.</li>
+  </ul>
+
+  <h2>Data deletion</h2>
+  <p>All app data lives on your device: uninstalling Perusa deletes it. If you opted into sharing
+  and want previously uploaded anonymous records removed, contact the address below with your
+  install identifier (shown in settings) — though note we cannot connect uploads to you as a
+  person without it.</p>
+
+  <h2>Permissions summary</h2>
+  <div class="wrap">
+    <table>
+      <tr><th>Permission</th><th>Why</th></tr>
+      <tr><td>Display over other apps</td><td>Draw the cue overlay on top of your reading app</td></tr>
+      <tr><td>Location (while in use)</td><td>Speed-only driving detection; position never stored/sent</td></tr>
+      <tr><td>Notifications</td><td>Cue controls and the optional end-of-drive check-in</td></tr>
+      <tr><td>Usage access (optional)</td><td>Auto-pause cues over apps you choose</td></tr>
+      <tr><td>Vibration</td><td>Optional anticipatory tactile taps</td></tr>
+    </table>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:elliottjempty@gmail.com">elliottjempty@gmail.com</a></p>
+
+  <h2>Changes</h2>
+  <p>Material changes to this policy will be reflected here with a new effective date before they
+  take effect.</p>
+</main>
+</body>
+</html>
