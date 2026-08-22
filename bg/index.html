@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Backdrop</title>
+<style>
+  html,body{margin:0;padding:0}
+  /* Tall body so one small scroll collapses the browser chrome for a clean recording. */
+  body{min-height:300vh;background:#808080}
+</style>
+</head>
+<body>
+<script>
+  // Color from the hash: ejempty.github.io/perusa/bg/#0e1114 or #fff or #ccc
+  function apply(){
+    var c = location.hash.replace('#','');
+    if (/^[0-9a-fA-F]{3}$|^[0-9a-fA-F]{6}$/.test(c)) document.body.style.background = '#'+c;
+  }
+  apply();
+  addEventListener('hashchange', apply);
+</script>
+</body>
+</html>
