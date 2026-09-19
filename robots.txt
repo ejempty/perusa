@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /bg/
+Disallow: /reader/
+
+Sitemap: https://ejempty.github.io/perusa/sitemap.xml

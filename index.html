@@ -3,34 +3,252 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Perusa</title>
-<style>
-  :root { --bg: #fbfbfc; --ink: #1c2530; --muted: #5a6875; --accent: #0891b2; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #12181e; --ink: #e2e8ee; --muted: #93a1ad; --accent: #22d3ee; }
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--bg); color: var(--ink);
-    font: 17px/1.6 system-ui, sans-serif;
-    min-height: 100vh; display: grid; place-items: center; padding: 2rem;
-  }
-  main { text-align: center; max-width: 26rem; }
-  h1 { font-size: 1.6rem; margin: 1rem 0 .5rem; }
-  p { color: var(--muted); margin-bottom: 1.5rem; }
-  a { color: var(--accent); }
-</style>
+<title>Perusa: Motion Sickness App for Android Phones</title>
+<meta name="description" content="Get car sick reading your phone? Perusa adds motion cue dots over any Android app. They follow real braking and turns and stay still over potholes. $4.99 once, no ads.">
+<link rel="canonical" href="https://ejempty.github.io/perusa/">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Perusa motion sickness app">
+<meta property="og:title" content="Perusa: Motion Sickness App for Android Phones">
+<meta property="og:description" content="Motion cue dots over any Android app. They follow the car's real braking and turns, and stay still over potholes. Pay once. No ads, no account.">
+<meta property="og:url" content="https://ejempty.github.io/perusa/">
+<meta property="og:image" content="https://ejempty.github.io/perusa/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=B612+Mono&display=swap">
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Perusa: Motion Sickness Relief",
+  "alternateName": "Perusa motion sickness app",
+  "operatingSystem": "Android 8.0 and up",
+  "applicationCategory": "HealthApplication",
+  "description": "Perusa is a paid Android app for car passengers. It overlays motion cue dots on any app. The dots follow the car's real braking, acceleration and turns and stay still over potholes and road shake.",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.perusa.app",
+  "url": "https://ejempty.github.io/perusa/",
+  "image": "https://ejempty.github.io/perusa/img/icon-192.png",
+  "screenshot": "https://ejempty.github.io/perusa/img/01-cues-over-reading.webp",
+  "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "Elliott Jempty" }
+}
+</script>
 </head>
 <body>
+
+<header class="wrap top">
+  <a class="brand" href="./"><img src="img/icon-192.png" alt="" width="36" height="36">Perusa</a>
+  <nav aria-label="Site">
+    <a href="#how">How it works</a>
+    <a href="#compare">Compare</a>
+    <a href="#faq">Questions</a>
+    <a href="motion-assist-alternative/">No Motion Assist?</a>
+  </nav>
+</header>
+
 <main>
-  <svg width="72" height="72" viewBox="0 0 108 108" aria-hidden="true">
-    <rect width="108" height="108" rx="24" fill="#0F2931"/>
-    <circle cx="54" cy="54" r="22.4" fill="none" stroke="#E8F4F8" stroke-width="4"/>
-    <circle cx="60.7" cy="48.4" r="6.7" fill="#7FD4E8"/>
-  </svg>
-  <h1>Perusa</h1>
-  <p>Motion-sickness relief for reading in a moving vehicle. Coming to Google&nbsp;Play.</p>
-  <p><a href="privacy-policy/">Privacy policy</a></p>
+<div class="wrap hero">
+  <div>
+    <h1>Motion sickness relief for reading your phone in a moving car</h1>
+    <p class="lede">Perusa is an Android app for passengers. It draws small motion cue dots around the edges of your screen, over any app. The dots move with the car's real braking, acceleration and turns, so your eyes get the same story as your inner ear. <strong>Over potholes and road shake, they stay still.</strong></p>
+    <div class="buy">
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.perusa.app&referrer=utm_source%3Dlanding%26utm_medium%3Dhero">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Perusa on Google Play" width="209" height="62"></a>
+      <div class="price"><b>$4.99 once.</b> No subscription, no ads, no account.<br>
+        <span class="sale" id="sale" hidden>Launch sale: $1.99 until Oct 3, 2026</span></div>
+    </div>
+    <p class="fine">Android 8 and up. For passengers only. Perusa is a comfort aid, not a medical device. It does not diagnose, treat, cure or prevent any condition, and results vary from person to person.</p>
+  </div>
+
+  <div class="demo" aria-label="Interactive illustration of Perusa's motion cues">
+    <div class="phone" id="phone"><div class="screen">
+      <div class="page" aria-hidden="true">
+        <i></i><i></i><i></i><i class="s"></i><i class="g"></i><i></i><i></i><i></i><i class="s"></i>
+        <i class="g"></i><i></i><i></i><i class="s"></i><i class="g"></i><i></i><i></i><i></i><i></i><i class="s"></i>
+        <i class="g"></i><i></i><i></i><i class="s"></i><i class="g"></i><i></i><i></i><i></i><i class="s"></i>
+        <i class="g"></i><i></i><i></i><i></i><i class="s"></i>
+      </div>
+      <canvas id="cues"></canvas>
+    </div></div>
+    <p class="readout" id="readout" aria-live="polite">Cruising. Dots at rest.</p>
+    <div class="keys">
+      <button type="button" data-act="brake">Brake</button>
+      <button type="button" data-act="accel">Accelerate</button>
+      <button type="button" data-act="left">Turn left</button>
+      <button type="button" data-act="right">Turn right</button>
+      <button type="button" data-act="bump" class="bump">Hit a pothole</button>
+    </div>
+    <button type="button" class="switch" id="filter" aria-pressed="true"><span>Road-shake filter</span><b>ON</b></button>
+  </div>
+</div>
+
+<section id="how"><div class="wrap">
+  <p class="eyebrow">Why the dots stay still</p>
+  <h2>Car sickness comes from slow motion. Potholes are fast.</h2>
+  <p>Motion sickness, car sickness, travel sickness: whatever you call it, the leading explanation is a conflict between your senses. Your inner ear feels the car brake and turn. Your eyes, fixed on a still page, report that nothing is moving. Motion cues give your eyes that missing information in your peripheral vision, outside the text you are reading.</p>
+  <p>Which motion matters is well measured. The international vibration standard ISO 2631-1 puts the sickness-causing band at <strong>0.1 to 0.5 Hz</strong>, the slow sway of braking and cornering. Potholes, expansion joints and a shaking hand sit around <strong>2 to 20 Hz</strong>. They rattle the phone, but they are not what makes you ill. Perusa follows the slow band and filters out the rest, so the dots do not jump with the road or your hand. Try the pothole button above with the filter on, then off.</p>
+  <figure class="band">
+    <div class="scale" role="img" aria-label="Frequency scale. 0.1 to 0.5 hertz: braking and turning, the band that causes motion sickness, which Perusa follows. 2 to 20 hertz: potholes and road shake, which Perusa ignores.">
+      <div class="sick"><span class="lab">Braking and turns</span></div>
+      <div class="road"><span class="lab">Potholes and road shake</span></div>
+    </div>
+    <div class="ticks" aria-hidden="true"><span style="left:0">0.1 Hz</span><span style="left:28.2%">0.5 Hz</span><span style="left:52.5%">2 Hz</span><span style="left:92.9%">20 Hz</span></div>
+    <figcaption>Perusa moves its cues for the blue band and holds them still for the amber one. Sources: <a href="https://www.iso.org/standard/7612.html">ISO 2631-1:1997</a>; Reason and Brand, <i>Motion Sickness</i> (1975), on sensory conflict; BBC Future, <a href="https://www.bbc.com/future/article/20260728-dancing-dots-the-motion-sickness-cure-hidden-in-your-iphone-settings">"Dancing dots"</a> (2026).</figcaption>
+  </figure>
+</div></section>
+
+<section><div class="wrap">
+  <p class="eyebrow">What you get</p>
+  <h2>Built for the ride, not the demo</h2>
+  <div class="rows">
+    <div><h3>Still through potholes</h3><p>A road-shake filter and a vertical road-hit veto keep the dots steady on bad roads. They move only when the car actually moves you.</p></div>
+    <div><h3>Learns what works for you</h3><p>Say yes to Tune to me and Perusa asks how you felt after each drive, with one tap on a notification and never mid-drive. It tries one small change at a time and keeps only what helps. Anything that doesn't is undone automatically.</p></div>
+    <div><h3>A tap before the brake</h3><p>A gentle touch cue lands a moment before a brake or turn builds, so your body is not surprised. Vision matches the motion; touch gets a head start. It is on at a low level by default and can be turned off.</p></div>
+    <div><h3>Over any app</h3><p>E-books, your browser, messages, video, games. Taps pass straight through the overlay. Cues start when the car does, stay up at stop lights, and stand down when the drive ends. Auto-pause hides them over apps you choose, such as banking.</p></div>
+    <div><h3>Pay once, private by design</h3><p>No subscription, no ads, no account, no trackers. Perusa reads speed to know you are riding. Your location is never stored and never leaves the phone. Sharing anonymous drive summaries is optional and asked once. <a href="privacy-policy/">Privacy policy</a>.</p></div>
+  </div>
+  <div class="shots">
+    <img src="img/01-cues-over-reading.webp" width="720" height="1280" loading="lazy" alt="Perusa motion cue dots overlaid on a dark-mode e-book page on an Android phone">
+    <img src="img/02-intensity.webp" width="720" height="1280" loading="lazy" alt="Perusa settings: cue intensity, cue speed, sensitivity and bump filter sliders">
+    <img src="img/03-tune-to-me.webp" width="720" height="1280" loading="lazy" alt="Perusa Tune to me screen, which learns the most effective cues from rated drives">
+    <img src="img/04-auto-pause.webp" width="720" height="1280" loading="lazy" alt="Perusa auto-pause picker for choosing apps where the cues should hide">
+  </div>
+</div></section>
+
+<section id="compare"><div class="wrap">
+  <p class="eyebrow">Compare</p>
+  <h2>Perusa and the built-in options</h2>
+  <p>Both phone platforms now ship their own motion cues. If your phone has one, try it first: it is free. Perusa is for Android phones that cannot get the built-in feature, and for riders who want cues that ignore rough roads and adapt to them.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th scope="col"></th><th scope="col">Perusa</th><th scope="col">Motion Assist (Google)</th><th scope="col">Vehicle Motion Cues (Apple)</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Works on</th><td class="us">Android 8 and up</td><td>Android 17 on Pixel and recent Galaxy phones</td><td>iPhone and iPad, iOS 18 and up</td></tr>
+      <tr><th scope="row">Cost</th><td class="us">$4.99 once</td><td>Free, built in</td><td>Free, built in</td></tr>
+      <tr><th scope="row">Holds still over potholes</th><td class="us">Yes, by design (0.1–0.5 Hz band only)</td><td>Not yet tested by us</td><td>Not yet tested by us</td></tr>
+      <tr><th scope="row">Adapts to you</th><td class="us">Yes, from your post-drive ratings</td><td>Appearance settings</td><td>Appearance settings</td></tr>
+      <tr><th scope="row">Touch cue before a brake or turn</th><td class="us">Yes, adjustable</td><td>Not offered</td><td>Not offered</td></tr>
+      <tr><th scope="row">Starts by itself in a vehicle</th><td class="us">Yes</td><td>Yes</td><td>Yes</td></tr>
+      <tr><th scope="row">Ads, account or tracking</th><td class="us">None</td><td>None</td><td>None</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Checked September 19, 2026 against <a href="https://9to5google.com/2026/09/14/android-motion-assist-pixel-samsung/">9to5Google</a> and <a href="https://www.androidauthority.com/google-android-17-motion-assist-rolling-out-3702494/">Android Authority</a> on Motion Assist, and <a href="https://www.apple.com/newsroom/2024/05/apple-announces-new-accessibility-features-including-eye-tracking/">Apple's announcement</a> of Vehicle Motion Cues. We only claim what we have measured. Corrections are welcome at the address below.</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <p class="eyebrow">Questions</p>
+  <h2>Straight answers</h2>
+  <div class="faq">
+    <details open><summary><h3>Does Android have a motion sickness setting?</h3></summary>
+      <p>Yes, on the newest phones. Google's Motion Assist arrived with Android 17 on Pixel phones and on Galaxy phones running One UI 9. Look for a Motion Assist tile in Quick Settings, or search Settings for it. If you have it, try it first. If your phone runs Android 16 or older, it cannot get Motion Assist, and that is where Perusa comes in. See <a href="motion-assist-alternative/">what older Android phones can do</a>.</p></details>
+    <details><summary><h3>Can I get the iPhone motion sickness dots on Android?</h3></summary>
+      <p>Apple's dots are a feature called Vehicle Motion Cues and only run on iPhone and iPad. On Android the equivalents are Motion Assist on Android 17, and apps such as Perusa, which works on Android 8 and up.</p></details>
+    <details><summary><h3>How is Perusa different from free motion cue apps like KineStop?</h3></summary>
+      <p>There are good free apps, and you should try them. Perusa differs in three ways we can stand behind: it filters out road shake so the dots hold still over potholes, it tunes itself from how you felt after each drive, and it adds a touch cue just before a brake or turn. It also has no ads and no subscription. We have not run a controlled comparison against other apps, so we will not claim theirs are worse.</p></details>
+    <details><summary><h3>Does it work on buses, trains, boats or planes?</h3></summary>
+      <p>Perusa is built and tested in cars, including taxis and rideshares, and it is designed for road vehicles such as buses. We have not tested trains, boats or planes, so we do not claim them.</p></details>
+    <details><summary><h3>Can I use it while driving?</h3></summary>
+      <p>No. Perusa is for passengers only, and it asks you to confirm you are a passenger before every ride.</p></details>
+    <details><summary><h3>Is Perusa a medical device?</h3></summary>
+      <p>No. It is a comfort aid. It does not diagnose, treat, cure or prevent any condition, and it may not help everyone. If you have severe or persistent motion sickness, nausea or dizziness, talk to a doctor.</p></details>
+    <details><summary><h3>What does it collect?</h3></summary>
+      <p>Nothing unless you say yes. Location is used on the phone for speed and heading only; it is never stored and never sent. If you opt in, Perusa shares anonymous drive summaries and crash reports to improve the cues. Details are in the <a href="privacy-policy/">privacy policy</a>.</p></details>
+    <details><summary><h3>Can I try it before a drive, and can I get a refund?</h3></summary>
+      <p>Simulate Driving previews the cues from your couch. Google Play also lets you request a refund within 48 hours of purchase.</p></details>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="eyebrow">Who makes it</p>
+  <h2>Made by one independent developer</h2>
+  <p>Perusa is made by Elliott Jempty. The cue engine was tuned on recorded real-world drives, not a simulator. Questions, corrections and press: <a href="mailto:elliottjempty@gmail.com">elliottjempty@gmail.com</a>.</p>
+  <div class="buy">
+    <a class="badge" href="https://play.google.com/store/apps/details?id=com.perusa.app&referrer=utm_source%3Dlanding%26utm_medium%3Dfooter">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get the Perusa motion sickness app on Google Play" width="209" height="62" loading="lazy"></a>
+  </div>
+</div></section>
 </main>
+
+<footer><div class="wrap">
+  <nav aria-label="Footer"><a href="./">Perusa motion sickness app</a><a href="motion-assist-alternative/">Motion Assist alternative for older Android</a><a href="privacy-policy/">Privacy policy</a></nav>
+  <p>Last updated September 19, 2026. Google Play and the Google Play logo are trademarks of Google LLC. Motion Assist is a Google feature; Vehicle Motion Cues is an Apple feature. Perusa is not affiliated with either company.</p>
+</div></footer>
+
+<script>
+/* Sale chip: shown only while the launch sale runs (ends Oct 3, 2026, 23:59 GMT). */
+(function () {
+  var now = Date.now();
+  if (now >= Date.UTC(2026, 8, 20) && now <= Date.UTC(2026, 9, 3, 23, 59, 59)) document.getElementById("sale").hidden = false;
+})();
+
+/* Cue illustration. Slow manoeuvres move the dots. A pothole is a fast vertical jolt: the phone
+   shakes either way, but with the filter on the dots hold still. Not the app's real signal chain. */
+(function () {
+  var cv = document.getElementById("cues"), ctx = cv.getContext("2d"), phone = document.getElementById("phone");
+  var readout = document.getElementById("readout"), filterBtn = document.getElementById("filter");
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var W = 0, H = 0, dots = [], vx = 0, vy = 0, tx = 0, ty = 0, holdUntil = 0, joltStart = -1, filterOn = true, idle = true, last = 0;
+
+  function size() {
+    var r = cv.getBoundingClientRect(), d = Math.min(devicePixelRatio || 1, 2);
+    W = r.width; H = r.height; cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0);
+    if (!dots.length) seed();
+  }
+  function seed() {
+    var rnd = (function (s) { return function () { s = (s * 16807) % 2147483647; return s / 2147483647; }; })(7);
+    for (var i = 0; i < 46; i++) {
+      var edge = rnd() < 0.5, x = edge ? (rnd() < 0.5 ? rnd() * 0.16 : 1 - rnd() * 0.16) : rnd();
+      var y = edge ? rnd() : (rnd() < 0.5 ? rnd() * 0.07 : 1 - rnd() * 0.07);
+      dots.push({ x: x, y: y, r: 1.6 + rnd() * 2.6, a: 0.35 + rnd() * 0.45 });
+    }
+  }
+  var ACT = {
+    brake: [0, -1, "Braking. Dots surge forward with the car."], accel: [0, 1, "Accelerating. Dots ease back."],
+    left: [1, 0, "Turning left. Dots sweep right."], right: [-1, 0, "Turning right. Dots sweep left."]
+  };
+  function act(name, fromUser) {
+    if (fromUser) idle = false;
+    var now = performance.now();
+    if (name === "bump") {
+      joltStart = now;
+      readout.innerHTML = filterOn ? "Pothole. Phone shakes, <b>dots hold still</b>." : "Pothole, filter off. <b>Dots jump with the road</b>.";
+      return;
+    }
+    var a = ACT[name]; tx = a[0] * 0.22; ty = a[1] * 0.22; holdUntil = now + 1500; readout.textContent = a[2];
+  }
+  function frame(now) {
+    var dt = Math.min((now - last) / 1000 || 0, 0.05); last = now;
+    if (now > holdUntil && (tx || ty)) { tx = 0; ty = 0; readout.textContent = "Cruising. Dots at rest."; }
+    var k = 1 - Math.exp(-dt * 2.2); vx += (tx - vx) * k; vy += (ty - vy) * k;   // slow, settled response
+    var jolt = 0;
+    if (joltStart >= 0) {
+      var t = (now - joltStart) / 1000;
+      if (t > 0.9) { joltStart = -1; phone.style.transform = ""; }
+      else { jolt = Math.sin(t * 2 * Math.PI * 9) * Math.exp(-t * 5) * 9; phone.style.transform = "translateY(" + jolt.toFixed(1) + "px)"; }
+    }
+    ctx.clearRect(0, 0, W, H);
+    for (var i = 0; i < dots.length; i++) {
+      var d = dots[i];
+      d.x = (d.x + vx * dt + 1) % 1; d.y = (d.y + vy * dt + 1) % 1;
+      var px = d.x * W, py = d.y * H + (filterOn ? -jolt : jolt * 1.6);          // filter on: cancel the shake on screen
+      ctx.globalAlpha = d.a; ctx.fillStyle = "#c8d3d8"; ctx.beginPath(); ctx.arc(px, py, d.r, 0, 6.2832); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(frame);
+  }
+  document.querySelectorAll(".keys button").forEach(function (b) { b.addEventListener("click", function () { act(b.dataset.act, true); }); });
+  filterBtn.addEventListener("click", function () {
+    filterOn = !filterOn; idle = false;
+    filterBtn.setAttribute("aria-pressed", filterOn); filterBtn.querySelector("b").textContent = filterOn ? "ON" : "OFF";
+  });
+  addEventListener("resize", size); size(); requestAnimationFrame(frame);
+  if (!reduce) {                                   // quiet self-demo until the visitor takes over
+    var script = ["brake", "bump", "left", "accel", "bump", "right"], n = 0;
+    setInterval(function () { if (idle && !document.hidden) act(script[n++ % script.length], false); }, 3200);
+  }
+})();
+</script>
 </body>
 </html>
