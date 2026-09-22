@@ -242,7 +242,7 @@
     <h2>Data the app uses on your device</h2>
     <ul>
       <li><strong>Motion sensors</strong> (accelerometer, gyroscope, rotation): read continuously while the cues run, used only to move the cues. Not recorded, not transmitted.</li>
-      <li><strong>Location (GPS)</strong>: used only to compute your <strong>speed</strong>, so cues appear only when you are actually riding in a vehicle. Speed is processed in memory. Your <strong>position is never stored and never transmitted</strong> &mdash; the app has no server-side knowledge of where you are or where you have been.</li>
+      <li><strong>Location (GPS)</strong>: used only to compute your <strong>speed</strong> and your <strong>direction of travel</strong>, so cues appear only when you are actually riding in a vehicle and a turn can be told from a straight road. Both are processed in memory on the device. Your <strong>position is never stored and never transmitted</strong> &mdash; the app has no server-side knowledge of where you are or where you have been.</li>
       <li><strong>Foreground app package name</strong> (optional): if you grant Usage Access for the auto-pause feature, Perusa checks which app is in front so it can pause cues over apps you choose (password managers, banking). This check happens on-device; nothing is stored or sent.</li>
       <li><strong>Settings and drive history</strong>: your preferences, drive ratings, and tuning profile are stored in the app's private storage on your device only.</li>
     </ul>
@@ -268,7 +268,7 @@
       <table>
         <tr><th>Permission</th><th>Why</th></tr>
         <tr><td>Display over other apps</td><td>Draw the cue overlay on top of your reading app</td></tr>
-        <tr><td>Location (while in use)</td><td>Speed-only driving detection; position never stored/sent</td></tr>
+        <tr><td>Location (while in use)</td><td>Driving detection from speed and direction of travel; position never stored/sent</td></tr>
         <tr><td>Notifications</td><td>Cue controls and the optional end-of-drive check-in</td></tr>
         <tr><td>Usage access (optional)</td><td>Auto-pause cues over apps you choose</td></tr>
         <tr><td>Vibration</td><td>Optional anticipatory tactile taps</td></tr>
@@ -287,7 +287,7 @@
     <h2>البيانات التي يستخدمها التطبيق على جهازك</h2>
     <ul>
       <li><strong>مستشعرات الحركة</strong> (مقياس التسارع والجيروسكوب والدوران): تُقرأ باستمرار أثناء عمل المؤشرات، ولا تُستخدم إلا لتحريك المؤشرات. لا تُسجّل ولا تُرسل.</li>
-      <li><strong>الموقع (GPS)</strong>: يُستخدم فقط لحساب <strong>سرعتك</strong>، حتى لا تظهر المؤشرات إلا عندما تكون راكبًا في مركبة فعلًا. تُعالَج السرعة في الذاكرة. <strong>موقعك لا يُخزّن ولا يُرسل أبدًا</strong> &mdash; ليس لدى التطبيق أي معرفة على الخادم بمكانك أو بالأماكن التي كنت فيها.</li>
+      <li><strong>الموقع (GPS)</strong>: يُستخدم فقط لحساب <strong>سرعتك</strong> و<strong>اتجاه سيرك</strong>، حتى لا تظهر المؤشرات إلا عندما تكون راكبًا في مركبة فعلًا ويمكن تمييز المنعطف عن الطريق المستقيم. ويُعالَج كلاهما في الذاكرة على الجهاز. <strong>موقعك لا يُخزّن ولا يُرسل أبدًا</strong> &mdash; ليس لدى التطبيق أي معرفة على الخادم بمكانك أو بالأماكن التي كنت فيها.</li>
       <li><strong>اسم حزمة التطبيق الذي في المقدّمة</strong> (اختياري): إن منحت «الوصول إلى بيانات الاستخدام» من أجل الإيقاف التلقائي، يتحقق Perusa من التطبيق الموجود في المقدّمة ليوقف المؤشرات فوق التطبيقات التي تختارها (مديرو كلمات المرور، الخدمات المصرفية). يحدث هذا التحقق على الجهاز؛ ولا يُخزّن شيء ولا يُرسل.</li>
       <li><strong>الإعدادات وسجل الرحلات</strong>: تُحفظ تفضيلاتك وتقييماتك للرحلات وملف الضبط في التخزين الخاص بالتطبيق على جهازك وحده.</li>
     </ul>
@@ -313,7 +313,7 @@
       <table>
         <tr><th>الإذن</th><th>لماذا</th></tr>
         <tr><td>العرض فوق التطبيقات الأخرى</td><td>رسم طبقة المؤشرات فوق تطبيق القراءة</td></tr>
-        <tr><td>الموقع (أثناء الاستخدام)</td><td>اكتشاف الرحلة بالسرعة وحدها؛ ولا يُخزّن الموقع ولا يُرسل أبدًا</td></tr>
+        <tr><td>الموقع (أثناء الاستخدام)</td><td>اكتشاف الرحلة من السرعة واتجاه السير؛ ولا يُخزّن الموقع ولا يُرسل أبدًا</td></tr>
         <tr><td>الإشعارات</td><td>التحكّم في المؤشرات والسؤال الاختياري بعد الرحلة</td></tr>
         <tr><td>الوصول إلى بيانات الاستخدام (اختياري)</td><td>إيقاف المؤشرات تلقائيًا فوق التطبيقات التي تختارها</td></tr>
         <tr><td>الاهتزاز</td><td>نبضات لمسية استباقية اختيارية</td></tr>
@@ -332,7 +332,7 @@
     <h2>Daten, die die App auf Ihrem Gerät verwendet</h2>
     <ul>
       <li><strong>Bewegungssensoren</strong> (Beschleunigungssensor, Gyroskop, Rotation): werden fortlaufend gelesen, während die Hinweise laufen, und nur dazu verwendet, die Hinweise zu bewegen. Sie werden nicht aufgezeichnet und nicht übertragen.</li>
-      <li><strong>Standort (GPS)</strong>: wird nur verwendet, um Ihre <strong>Geschwindigkeit</strong> zu berechnen, damit Hinweise nur erscheinen, wenn Sie tatsächlich in einem Fahrzeug mitfahren. Die Geschwindigkeit wird im Arbeitsspeicher verarbeitet. Ihre <strong>Position wird nie gespeichert und nie übertragen</strong> &mdash; die App weiß serverseitig nicht, wo Sie sind oder wo Sie gewesen sind.</li>
+      <li><strong>Standort (GPS)</strong>: wird nur verwendet, um Ihre <strong>Geschwindigkeit</strong> und Ihre <strong>Fahrtrichtung</strong> zu berechnen, damit Hinweise nur erscheinen, wenn Sie tatsächlich in einem Fahrzeug mitfahren, und damit eine Kurve von einer geraden Strecke unterschieden werden kann. Beides wird im Arbeitsspeicher auf dem Gerät verarbeitet. Ihre <strong>Position wird nie gespeichert und nie übertragen</strong> &mdash; die App weiß serverseitig nicht, wo Sie sind oder wo Sie gewesen sind.</li>
       <li><strong>Paketname der App im Vordergrund</strong> (optional): Wenn Sie für die automatische Pause den „Zugriff auf Nutzungsdaten“ erteilen, prüft Perusa, welche App im Vordergrund ist, um die Hinweise über von Ihnen gewählten Apps zu pausieren (Passwortmanager, Banking). Diese Prüfung findet auf dem Gerät statt; nichts wird gespeichert oder gesendet.</li>
       <li><strong>Einstellungen und Fahrtverlauf</strong>: Ihre Voreinstellungen, Fahrtbewertungen und Ihr Anpassungsprofil werden ausschließlich im privaten Speicher der App auf Ihrem Gerät abgelegt.</li>
     </ul>
@@ -358,7 +358,7 @@
       <table>
         <tr><th>Berechtigung</th><th>Wofür</th></tr>
         <tr><td>Über anderen Apps einblenden</td><td>Die Hinweis-Überlagerung über Ihrer Lese-App zeichnen</td></tr>
-        <tr><td>Standort (während der Nutzung)</td><td>Fahrterkennung nur über die Geschwindigkeit; Position wird nie gespeichert oder gesendet</td></tr>
+        <tr><td>Standort (während der Nutzung)</td><td>Fahrterkennung über Geschwindigkeit und Fahrtrichtung; Position wird nie gespeichert oder gesendet</td></tr>
         <tr><td>Benachrichtigungen</td><td>Steuerung der Hinweise und die optionale Rückfrage am Ende der Fahrt</td></tr>
         <tr><td>Zugriff auf Nutzungsdaten (optional)</td><td>Hinweise über selbst gewählten Apps automatisch pausieren</td></tr>
         <tr><td>Vibration</td><td>Optionale vorausschauende tastbare Impulse</td></tr>
@@ -377,7 +377,7 @@
     <h2>Datos que la app usa en tu dispositivo</h2>
     <ul>
       <li><strong>Sensores de movimiento</strong> (acelerómetro, giroscopio, rotación): se leen de forma continua mientras funcionan las señales, y solo se usan para mover las señales. No se graban ni se transmiten.</li>
-      <li><strong>Ubicación (GPS)</strong>: se usa únicamente para calcular tu <strong>velocidad</strong>, de modo que las señales aparezcan solo cuando de verdad vas en un vehículo. La velocidad se procesa en memoria. Tu <strong>posición nunca se guarda ni se transmite</strong> &mdash; la app no tiene ningún conocimiento en el servidor de dónde estás ni de dónde has estado.</li>
+      <li><strong>Ubicación (GPS)</strong>: se usa únicamente para calcular tu <strong>velocidad</strong> y tu <strong>dirección de la marcha</strong>, de modo que las señales aparezcan solo cuando de verdad vas en un vehículo y se pueda distinguir una curva de una recta. Ambas se procesan en memoria, en el dispositivo. Tu <strong>posición nunca se guarda ni se transmite</strong> &mdash; la app no tiene ningún conocimiento en el servidor de dónde estás ni de dónde has estado.</li>
       <li><strong>Nombre del paquete de la app en primer plano</strong> (opcional): si concedes el «acceso a datos de uso» para la pausa automática, Perusa comprueba qué app está en primer plano para poder pausar las señales sobre las apps que elijas (gestores de contraseñas, banca). Esa comprobación ocurre en el dispositivo; no se guarda ni se envía nada.</li>
       <li><strong>Ajustes e historial de viajes</strong>: tus preferencias, tus valoraciones de los viajes y tu perfil de ajuste se guardan solo en el almacenamiento privado de la app, en tu dispositivo.</li>
     </ul>
@@ -403,7 +403,7 @@
       <table>
         <tr><th>Permiso</th><th>Para qué</th></tr>
         <tr><td>Mostrar sobre otras aplicaciones</td><td>Dibujar la capa de señales encima de tu app de lectura</td></tr>
-        <tr><td>Ubicación (mientras se usa)</td><td>Detección del viaje solo por velocidad; la posición nunca se guarda ni se envía</td></tr>
+        <tr><td>Ubicación (mientras se usa)</td><td>Detección del viaje por velocidad y dirección de la marcha; la posición nunca se guarda ni se envía</td></tr>
         <tr><td>Notificaciones</td><td>Controles de las señales y la pregunta opcional al final del viaje</td></tr>
         <tr><td>Acceso a datos de uso (opcional)</td><td>Pausar las señales automáticamente sobre las apps que elijas</td></tr>
         <tr><td>Vibración</td><td>Toques táctiles anticipatorios opcionales</td></tr>
@@ -422,7 +422,7 @@
     <h2>Données que l’application utilise sur votre appareil</h2>
     <ul>
       <li><strong>Capteurs de mouvement</strong> (accéléromètre, gyroscope, rotation)&nbsp;: lus en continu pendant que les repères fonctionnent, et utilisés uniquement pour déplacer les repères. Ni enregistrés, ni transmis.</li>
-      <li><strong>Position (GPS)</strong>&nbsp;: utilisée uniquement pour calculer votre <strong>vitesse</strong>, afin que les repères n’apparaissent que lorsque vous roulez réellement dans un véhicule. La vitesse est traitée en mémoire. Votre <strong>position n’est jamais enregistrée ni jamais transmise</strong> &mdash; l’application n’a, côté serveur, aucune connaissance de l’endroit où vous êtes ni de ceux où vous avez été.</li>
+      <li><strong>Position (GPS)</strong>&nbsp;: utilisée uniquement pour calculer votre <strong>vitesse</strong> et votre <strong>direction de déplacement</strong>, afin que les repères n’apparaissent que lorsque vous roulez réellement dans un véhicule et qu’un virage puisse être distingué d’une route droite. Les deux sont traités en mémoire, sur l’appareil. Votre <strong>position n’est jamais enregistrée ni jamais transmise</strong> &mdash; l’application n’a, côté serveur, aucune connaissance de l’endroit où vous êtes ni de ceux où vous avez été.</li>
       <li><strong>Nom du paquet de l’application au premier plan</strong> (facultatif)&nbsp;: si vous accordez l’«&nbsp;accès aux données d’utilisation&nbsp;» pour la pause automatique, Perusa vérifie quelle application est au premier plan afin de mettre les repères en pause sur les applications que vous choisissez (gestionnaires de mots de passe, banque). Cette vérification a lieu sur l’appareil&nbsp;; rien n’est enregistré ni envoyé.</li>
       <li><strong>Réglages et historique des trajets</strong>&nbsp;: vos préférences, vos évaluations de trajets et votre profil d’adaptation sont conservés uniquement dans le stockage privé de l’application, sur votre appareil.</li>
     </ul>
@@ -448,7 +448,7 @@
       <table>
         <tr><th>Autorisation</th><th>Pourquoi</th></tr>
         <tr><td>Superposition à d’autres applications</td><td>Dessiner la couche de repères par-dessus votre application de lecture</td></tr>
-        <tr><td>Localisation (pendant l’utilisation)</td><td>Détection du trajet par la vitesse seule&nbsp;; la position n’est jamais enregistrée ni envoyée</td></tr>
+        <tr><td>Localisation (pendant l’utilisation)</td><td>Détection du trajet par la vitesse et la direction de déplacement&nbsp;; la position n’est jamais enregistrée ni envoyée</td></tr>
         <tr><td>Notifications</td><td>Commandes des repères et question facultative à la fin du trajet</td></tr>
         <tr><td>Accès aux données d’utilisation (facultatif)</td><td>Mettre les repères en pause automatiquement sur les applications que vous choisissez</td></tr>
         <tr><td>Vibration</td><td>Impulsions tactiles anticipatrices facultatives</td></tr>
@@ -467,7 +467,7 @@
     <h2>Dati che l’app usa sul tuo dispositivo</h2>
     <ul>
       <li><strong>Sensori di movimento</strong> (accelerometro, giroscopio, rotazione): letti in continuo mentre i segnali sono attivi e usati soltanto per muovere i segnali. Non vengono registrati né trasmessi.</li>
-      <li><strong>Posizione (GPS)</strong>: usata solo per calcolare la tua <strong>velocità</strong>, così che i segnali compaiano solo quando stai davvero viaggiando in un veicolo. La velocità viene elaborata in memoria. La tua <strong>posizione non viene mai memorizzata né mai trasmessa</strong> &mdash; lato server l’app non sa dove sei né dove sei stato.</li>
+      <li><strong>Posizione (GPS)</strong>: usata solo per calcolare la tua <strong>velocità</strong> e la tua <strong>direzione di marcia</strong>, così che i segnali compaiano solo quando stai davvero viaggiando in un veicolo e una curva possa essere distinta da una strada dritta. Entrambe vengono elaborate in memoria, sul dispositivo. La tua <strong>posizione non viene mai memorizzata né mai trasmessa</strong> &mdash; lato server l’app non sa dove sei né dove sei stato.</li>
       <li><strong>Nome del pacchetto dell’app in primo piano</strong> (facoltativo): se concedi l’«accesso ai dati di utilizzo» per la pausa automatica, Perusa controlla quale app è in primo piano per poter mettere in pausa i segnali sopra le app che scegli (gestori di password, banche). Questo controllo avviene sul dispositivo; nulla viene memorizzato o inviato.</li>
       <li><strong>Impostazioni e cronologia dei viaggi</strong>: le tue preferenze, le valutazioni dei viaggi e il tuo profilo di adattamento sono conservati solo nella memoria privata dell’app, sul tuo dispositivo.</li>
     </ul>
@@ -493,7 +493,7 @@
       <table>
         <tr><th>Permesso</th><th>Perché</th></tr>
         <tr><td>Visualizza sopra altre app</td><td>Disegnare il livello dei segnali sopra la tua app di lettura</td></tr>
-        <tr><td>Posizione (durante l’uso)</td><td>Rilevamento del viaggio solo dalla velocità; la posizione non viene mai memorizzata né inviata</td></tr>
+        <tr><td>Posizione (durante l’uso)</td><td>Rilevamento del viaggio da velocità e direzione di marcia; la posizione non viene mai memorizzata né inviata</td></tr>
         <tr><td>Notifiche</td><td>Comandi dei segnali e la domanda facoltativa alla fine del viaggio</td></tr>
         <tr><td>Accesso ai dati di utilizzo (facoltativo)</td><td>Mettere in pausa i segnali sopra le app che scegli</td></tr>
         <tr><td>Vibrazione</td><td>Tocchi tattili anticipatori facoltativi</td></tr>
@@ -512,7 +512,7 @@
     <h2>アプリが端末内で使うデータ</h2>
     <ul>
       <li><strong>モーションセンサー</strong>（加速度センサー、ジャイロスコープ、回転）: 表示が動いているあいだ継続的に読み取られ、表示を動かすためだけに使われます。記録も送信もされません。</li>
-      <li><strong>位置情報（GPS）</strong>: <strong>速度</strong>を算出するためだけに使い、実際に車両で移動しているときだけ表示が出るようにします。速度はメモリ内で処理されます。<strong>位置は保存も送信も一切されません</strong> &mdash; サーバー側では、あなたがどこにいるのか、どこにいたのかを一切把握していません。</li>
+      <li><strong>位置情報（GPS）</strong>: <strong>速度</strong>と<strong>進行方向</strong>を算出するためだけに使い、実際に車両で移動しているときだけ表示が出るように、またカーブと直線路を見分けられるようにします。どちらも端末内のメモリで処理されます。<strong>位置は保存も送信も一切されません</strong> &mdash; サーバー側では、あなたがどこにいるのか、どこにいたのかを一切把握していません。</li>
       <li><strong>前面にあるアプリのパッケージ名</strong>（任意）: 自動一時停止のために「使用状況へのアクセス」を許可した場合、Perusa はどのアプリが前面にあるかを確かめ、あなたが選んだアプリ（パスワード管理、銀行）の上では表示を一時停止します。この確認は端末内で行われ、何も保存されず送信されません。</li>
       <li><strong>設定と移動の履歴</strong>: 設定、移動の評価、チューニングのプロファイルは、すべて端末内のアプリ専用領域にのみ保存されます。</li>
     </ul>
@@ -538,7 +538,7 @@
       <table>
         <tr><th>権限</th><th>用途</th></tr>
         <tr><td>他のアプリの上に重ねて表示</td><td>読んでいるアプリの上にモーション表示を描く</td></tr>
-        <tr><td>位置情報（使用中のみ）</td><td>速度だけで移動を検出。位置は保存も送信もされません</td></tr>
+        <tr><td>位置情報（使用中のみ）</td><td>速度と進行方向で移動を検出。位置は保存も送信もされません</td></tr>
         <tr><td>通知</td><td>表示の操作と、移動後の任意の確認</td></tr>
         <tr><td>使用状況へのアクセス（任意）</td><td>選んだアプリの上では表示を自動で一時停止</td></tr>
         <tr><td>バイブレーション</td><td>任意の先読み触覚タップ</td></tr>
@@ -557,7 +557,7 @@
     <h2>앱이 기기에서 사용하는 데이터</h2>
     <ul>
       <li><strong>모션 센서</strong>(가속도계, 자이로스코프, 회전): 표시가 동작하는 동안 계속 읽으며, 표시를 움직이는 데에만 사용됩니다. 기록하지도, 전송하지도 않습니다.</li>
-      <li><strong>위치(GPS)</strong>: <strong>속도</strong>를 계산하는 데에만 사용되어, 실제로 차량으로 이동할 때만 표시가 나타납니다. 속도는 메모리에서 처리됩니다. <strong>위치는 절대 저장하거나 전송하지 않습니다</strong> &mdash; 서버 쪽에서는 사용자가 어디에 있는지, 어디에 있었는지 전혀 알 수 없습니다.</li>
+      <li><strong>위치(GPS)</strong>: <strong>속도</strong>와 <strong>진행 방향</strong>을 계산하는 데에만 사용되어, 실제로 차량으로 이동할 때만 표시가 나타나고 커브와 직선 도로를 구별할 수 있습니다. 둘 다 기기 안의 메모리에서 처리됩니다. <strong>위치는 절대 저장하거나 전송하지 않습니다</strong> &mdash; 서버 쪽에서는 사용자가 어디에 있는지, 어디에 있었는지 전혀 알 수 없습니다.</li>
       <li><strong>전면에 있는 앱의 패키지 이름</strong>(선택): 자동 일시 정지 기능을 위해 ‘사용 정보 접근’을 허용하면, Perusa는 어느 앱이 전면에 있는지 확인하여 직접 선택한 앱(비밀번호 관리자, 은행) 위에서는 표시를 일시 정지합니다. 이 확인은 기기에서 이루어지며, 아무것도 저장하거나 보내지 않습니다.</li>
       <li><strong>설정과 이동 기록</strong>: 선택한 설정, 이동 평가, 튜닝 프로필은 기기 안의 앱 전용 저장 공간에만 보관됩니다.</li>
     </ul>
@@ -583,7 +583,7 @@
       <table>
         <tr><th>권한</th><th>용도</th></tr>
         <tr><td>다른 앱 위에 표시</td><td>읽고 있는 앱 위에 모션 표시 층을 그립니다</td></tr>
-        <tr><td>위치(사용 중에만)</td><td>속도만으로 이동을 감지하며, 위치는 절대 저장하거나 보내지 않습니다</td></tr>
+        <tr><td>위치(사용 중에만)</td><td>속도와 진행 방향으로 이동을 감지하며, 위치는 절대 저장하거나 보내지 않습니다</td></tr>
         <tr><td>알림</td><td>표시 제어와 이동 후의 선택적 확인</td></tr>
         <tr><td>사용 정보 접근(선택)</td><td>선택한 앱 위에서는 표시를 자동으로 일시 정지</td></tr>
         <tr><td>진동</td><td>선택적인 예고 촉각 탭</td></tr>
@@ -602,7 +602,7 @@
     <h2>Gegevens die de app op je toestel gebruikt</h2>
     <ul>
       <li><strong>Bewegingssensoren</strong> (versnellingsmeter, gyroscoop, rotatie): worden continu uitgelezen terwijl de signalen lopen, en alleen gebruikt om de signalen te bewegen. Ze worden niet opgeslagen en niet verstuurd.</li>
-      <li><strong>Locatie (gps)</strong>: wordt alleen gebruikt om je <strong>snelheid</strong> te berekenen, zodat signalen alleen verschijnen wanneer je echt in een voertuig meerijdt. De snelheid wordt in het werkgeheugen verwerkt. Je <strong>positie wordt nooit opgeslagen en nooit verstuurd</strong> &mdash; de app weet aan de serverkant niet waar je bent of waar je bent geweest.</li>
+      <li><strong>Locatie (gps)</strong>: wordt alleen gebruikt om je <strong>snelheid</strong> en je <strong>rijrichting</strong> te berekenen, zodat signalen alleen verschijnen wanneer je echt in een voertuig meerijdt en een bocht van een rechte weg te onderscheiden is. Beide worden in het werkgeheugen op het toestel verwerkt. Je <strong>positie wordt nooit opgeslagen en nooit verstuurd</strong> &mdash; de app weet aan de serverkant niet waar je bent of waar je bent geweest.</li>
       <li><strong>Pakketnaam van de app op de voorgrond</strong> (optioneel): als je ‘toegang tot gebruiksgegevens’ geeft voor het automatisch pauzeren, kijkt Perusa welke app vooraan staat, zodat de signalen kunnen pauzeren over apps die je zelf kiest (wachtwoordmanagers, bankieren). Die controle gebeurt op het toestel; er wordt niets opgeslagen of verstuurd.</li>
       <li><strong>Instellingen en rittengeschiedenis</strong>: je voorkeuren, je beoordelingen van ritten en je afstemprofiel worden alleen in de privéopslag van de app op je toestel bewaard.</li>
     </ul>
@@ -628,7 +628,7 @@
       <table>
         <tr><th>Recht</th><th>Waarvoor</th></tr>
         <tr><td>Weergeven over andere apps</td><td>De signaallaag over je leesapp tekenen</td></tr>
-        <tr><td>Locatie (tijdens gebruik)</td><td>Ritdetectie op alleen snelheid; positie wordt nooit opgeslagen of verstuurd</td></tr>
+        <tr><td>Locatie (tijdens gebruik)</td><td>Ritdetectie op snelheid en rijrichting; positie wordt nooit opgeslagen of verstuurd</td></tr>
         <tr><td>Meldingen</td><td>Bediening van de signalen en de optionele vraag na de rit</td></tr>
         <tr><td>Toegang tot gebruiksgegevens (optioneel)</td><td>Signalen automatisch pauzeren over apps die je kiest</td></tr>
         <tr><td>Vibratie</td><td>Optionele vooruitlopende voelbare tikjes</td></tr>
@@ -647,7 +647,7 @@
     <h2>Dane, których aplikacja używa na Twoim urządzeniu</h2>
     <ul>
       <li><strong>Czujniki ruchu</strong> (akcelerometr, żyroskop, obrót): odczytywane bez przerwy, gdy wskazówki działają, i używane wyłącznie do poruszania wskazówkami. Nie są zapisywane ani przesyłane.</li>
-      <li><strong>Lokalizacja (GPS)</strong>: używana tylko do obliczenia Twojej <strong>prędkości</strong>, aby wskazówki pojawiały się wyłącznie wtedy, gdy naprawdę jedziesz pojazdem. Prędkość jest przetwarzana w pamięci. Twoja <strong>pozycja nigdy nie jest zapisywana ani przesyłana</strong> &mdash; po stronie serwera aplikacja nie wie, gdzie jesteś ani gdzie byłeś.</li>
+      <li><strong>Lokalizacja (GPS)</strong>: używana tylko do obliczenia Twojej <strong>prędkości</strong> i <strong>kierunku jazdy</strong>, aby wskazówki pojawiały się wyłącznie wtedy, gdy naprawdę jedziesz pojazdem, i aby można było odróżnić zakręt od prostej drogi. Oba te dane są przetwarzane w pamięci, na urządzeniu. Twoja <strong>pozycja nigdy nie jest zapisywana ani przesyłana</strong> &mdash; po stronie serwera aplikacja nie wie, gdzie jesteś ani gdzie byłeś.</li>
       <li><strong>Nazwa pakietu aplikacji na pierwszym planie</strong> (opcjonalnie): jeśli przyznasz „dostęp do historii użycia” dla automatycznego wstrzymywania, Perusa sprawdza, która aplikacja jest na pierwszym planie, aby wstrzymać wskazówki nad wybranymi przez Ciebie aplikacjami (menedżery haseł, bankowość). To sprawdzenie odbywa się na urządzeniu; nic nie jest zapisywane ani wysyłane.</li>
       <li><strong>Ustawienia i historia przejazdów</strong>: Twoje preferencje, oceny przejazdów i profil dostrajania są przechowywane wyłącznie w prywatnej pamięci aplikacji na Twoim urządzeniu.</li>
     </ul>
@@ -673,7 +673,7 @@
       <table>
         <tr><th>Uprawnienie</th><th>Do czego</th></tr>
         <tr><td>Wyświetlanie nad innymi aplikacjami</td><td>Rysowanie warstwy wskazówek nad Twoją aplikacją do czytania</td></tr>
-        <tr><td>Lokalizacja (w trakcie używania)</td><td>Wykrywanie przejazdu tylko na podstawie prędkości; pozycja nigdy nie jest zapisywana ani wysyłana</td></tr>
+        <tr><td>Lokalizacja (w trakcie używania)</td><td>Wykrywanie przejazdu na podstawie prędkości i kierunku jazdy; pozycja nigdy nie jest zapisywana ani wysyłana</td></tr>
         <tr><td>Powiadomienia</td><td>Sterowanie wskazówkami i opcjonalne pytanie po przejeździe</td></tr>
         <tr><td>Dostęp do historii użycia (opcjonalnie)</td><td>Automatyczne wstrzymywanie wskazówek nad wybranymi aplikacjami</td></tr>
         <tr><td>Wibracje</td><td>Opcjonalne wyprzedzające impulsy dotykowe</td></tr>
@@ -692,7 +692,7 @@
     <h2>Dados que o app usa no seu aparelho</h2>
     <ul>
       <li><strong>Sensores de movimento</strong> (acelerômetro, giroscópio, rotação): lidos continuamente enquanto as indicações estão funcionando, e usados só para mover as indicações. Não são gravados nem transmitidos.</li>
-      <li><strong>Localização (GPS)</strong>: usada apenas para calcular a sua <strong>velocidade</strong>, para que as indicações apareçam só quando você realmente está viajando em um veículo. A velocidade é processada na memória. A sua <strong>posição nunca é guardada nem transmitida</strong> &mdash; do lado do servidor o app não tem nenhum conhecimento de onde você está nem de onde você esteve.</li>
+      <li><strong>Localização (GPS)</strong>: usada apenas para calcular a sua <strong>velocidade</strong> e a sua <strong>direção do deslocamento</strong>, para que as indicações apareçam só quando você realmente está viajando em um veículo e para que uma curva possa ser distinguida de uma reta. As duas são processadas na memória, no aparelho. A sua <strong>posição nunca é guardada nem transmitida</strong> &mdash; do lado do servidor o app não tem nenhum conhecimento de onde você está nem de onde você esteve.</li>
       <li><strong>Nome do pacote do app em primeiro plano</strong> (opcional): se você conceder o “acesso ao uso” para a pausa automática, o Perusa verifica qual app está na frente para poder pausar as indicações sobre os apps que você escolher (gerenciadores de senhas, bancos). Essa verificação acontece no aparelho; nada é guardado nem enviado.</li>
       <li><strong>Ajustes e histórico de viagens</strong>: as suas preferências, as suas avaliações das viagens e o seu perfil de ajuste ficam guardados só no armazenamento privado do app, no seu aparelho.</li>
     </ul>
@@ -718,7 +718,7 @@
       <table>
         <tr><th>Permissão</th><th>Para quê</th></tr>
         <tr><td>Sobreposição a outros apps</td><td>Desenhar a camada de indicações sobre o seu app de leitura</td></tr>
-        <tr><td>Localização (durante o uso)</td><td>Detecção da viagem só pela velocidade; a posição nunca é guardada nem enviada</td></tr>
+        <tr><td>Localização (durante o uso)</td><td>Detecção da viagem pela velocidade e pela direção do deslocamento; a posição nunca é guardada nem enviada</td></tr>
         <tr><td>Notificações</td><td>Controles das indicações e a pergunta opcional no fim da viagem</td></tr>
         <tr><td>Acesso ao uso (opcional)</td><td>Pausar as indicações automaticamente sobre os apps que você escolher</td></tr>
         <tr><td>Vibração</td><td>Toques táteis antecipatórios opcionais</td></tr>
@@ -737,7 +737,7 @@
     <h2>Dados que a aplicação utiliza no seu dispositivo</h2>
     <ul>
       <li><strong>Sensores de movimento</strong> (acelerómetro, giroscópio, rotação): são lidos continuamente enquanto as indicações estão a funcionar e servem apenas para mover as indicações. Não são gravados nem transmitidos.</li>
-      <li><strong>Localização (GPS)</strong>: é utilizada apenas para calcular a sua <strong>velocidade</strong>, para que as indicações apareçam só quando está realmente a viajar num veículo. A velocidade é processada em memória. A sua <strong>posição nunca é guardada nem transmitida</strong> &mdash; do lado do servidor, a aplicação não sabe onde está nem onde esteve.</li>
+      <li><strong>Localização (GPS)</strong>: é utilizada apenas para calcular a sua <strong>velocidade</strong> e a sua <strong>direção do deslocamento</strong>, para que as indicações apareçam só quando está realmente a viajar num veículo e para que uma curva possa ser distinguida de uma reta. Ambas são processadas em memória, no dispositivo. A sua <strong>posição nunca é guardada nem transmitida</strong> &mdash; do lado do servidor, a aplicação não sabe onde está nem onde esteve.</li>
       <li><strong>Nome do pacote da aplicação em primeiro plano</strong> (opcional): se conceder o «acesso de utilização» para a pausa automática, o Perusa verifica que aplicação está em primeiro plano para poder colocar as indicações em pausa sobre as aplicações que escolher (gestores de palavras-passe, bancos). Essa verificação é feita no dispositivo; nada é guardado nem enviado.</li>
       <li><strong>Definições e histórico de viagens</strong>: as suas preferências, as suas avaliações das viagens e o seu perfil de ajuste ficam guardados apenas no armazenamento privado da aplicação, no seu dispositivo.</li>
     </ul>
@@ -763,7 +763,7 @@
       <table>
         <tr><th>Permissão</th><th>Para quê</th></tr>
         <tr><td>Sobrepor a outras aplicações</td><td>Desenhar a camada de indicações sobre a sua aplicação de leitura</td></tr>
-        <tr><td>Localização (durante a utilização)</td><td>Deteção da viagem apenas pela velocidade; a posição nunca é guardada nem enviada</td></tr>
+        <tr><td>Localização (durante a utilização)</td><td>Deteção da viagem pela velocidade e pela direção do deslocamento; a posição nunca é guardada nem enviada</td></tr>
         <tr><td>Notificações</td><td>Controlos das indicações e a pergunta opcional no fim da viagem</td></tr>
         <tr><td>Acesso de utilização (opcional)</td><td>Colocar as indicações em pausa automaticamente sobre as aplicações que escolher</td></tr>
         <tr><td>Vibração</td><td>Toques táteis antecipatórios opcionais</td></tr>
@@ -782,7 +782,7 @@
     <h2>Данные, которые приложение использует на вашем устройстве</h2>
     <ul>
       <li><strong>Датчики движения</strong> (акселерометр, гироскоп, вращение): считываются непрерывно, пока работают подсказки, и используются только для того, чтобы двигать подсказки. Не записываются и не передаются.</li>
-      <li><strong>Местоположение (GPS)</strong>: используется только для расчёта вашей <strong>скорости</strong>, чтобы подсказки появлялись лишь тогда, когда вы действительно едете в транспорте. Скорость обрабатывается в памяти. Ваша <strong>позиция никогда не сохраняется и никогда не передаётся</strong> &mdash; на стороне сервера приложение не знает, где вы находитесь и где вы были.</li>
+      <li><strong>Местоположение (GPS)</strong>: используется только для расчёта вашей <strong>скорости</strong> и <strong>направления движения</strong>, чтобы подсказки появлялись лишь тогда, когда вы действительно едете в транспорте, и чтобы поворот можно было отличить от прямой дороги. И то и другое обрабатывается в памяти на устройстве. Ваша <strong>позиция никогда не сохраняется и никогда не передаётся</strong> &mdash; на стороне сервера приложение не знает, где вы находитесь и где вы были.</li>
       <li><strong>Имя пакета приложения на переднем плане</strong> (необязательно): если вы дадите «доступ к данным об использовании» для автоматической паузы, Perusa проверяет, какое приложение открыто, чтобы ставить подсказки на паузу поверх выбранных вами приложений (менеджеры паролей, банки). Эта проверка выполняется на устройстве; ничего не сохраняется и не отправляется.</li>
       <li><strong>Настройки и история поездок</strong>: ваши настройки, оценки поездок и профиль подстройки хранятся только в частном хранилище приложения на вашем устройстве.</li>
     </ul>
@@ -808,7 +808,7 @@
       <table>
         <tr><th>Разрешение</th><th>Зачем</th></tr>
         <tr><td>Поверх других приложений</td><td>Рисовать слой подсказок поверх вашего приложения для чтения</td></tr>
-        <tr><td>Местоположение (во время использования)</td><td>Определение поездки только по скорости; позиция никогда не сохраняется и не отправляется</td></tr>
+        <tr><td>Местоположение (во время использования)</td><td>Определение поездки по скорости и направлению движения; позиция никогда не сохраняется и не отправляется</td></tr>
         <tr><td>Уведомления</td><td>Управление подсказками и необязательный вопрос в конце поездки</td></tr>
         <tr><td>Доступ к данным об использовании (необязательно)</td><td>Автоматически ставить подсказки на паузу поверх выбранных приложений</td></tr>
         <tr><td>Вибрация</td><td>Необязательные упреждающие тактильные касания</td></tr>
@@ -827,7 +827,7 @@
     <h2>Uygulamanın cihazınızda kullandığı veriler</h2>
     <ul>
       <li><strong>Hareket sensörleri</strong> (ivmeölçer, jiroskop, dönme): işaretler çalışırken sürekli okunur ve yalnızca işaretleri hareket ettirmek için kullanılır. Kaydedilmez, iletilmez.</li>
-      <li><strong>Konum (GPS)</strong>: yalnızca <strong>hızınızı</strong> hesaplamak için kullanılır, böylece işaretler ancak gerçekten bir araçla giderken görünür. Hız bellekte işlenir. <strong>Konumunuz asla saklanmaz ve asla iletilmez</strong> &mdash; uygulamanın sunucu tarafında nerede olduğunuza veya nerede bulunduğunuza dair hiçbir bilgisi yoktur.</li>
+      <li><strong>Konum (GPS)</strong>: yalnızca <strong>hızınızı</strong> ve <strong>gidiş yönünüzü</strong> hesaplamak için kullanılır; böylece işaretler ancak gerçekten bir araçla giderken görünür ve bir dönüş düz yoldan ayırt edilebilir. Her ikisi de cihazda bellekte işlenir. <strong>Konumunuz asla saklanmaz ve asla iletilmez</strong> &mdash; uygulamanın sunucu tarafında nerede olduğunuza veya nerede bulunduğunuza dair hiçbir bilgisi yoktur.</li>
       <li><strong>Önde olan uygulamanın paket adı</strong> (isteğe bağlı): otomatik duraklatma için “kullanım erişimi” verirseniz Perusa, hangi uygulamanın önde olduğunu denetler ve seçtiğiniz uygulamaların (parola yöneticileri, bankacılık) üzerinde işaretleri duraklatır. Bu denetim cihazda yapılır; hiçbir şey saklanmaz veya gönderilmez.</li>
       <li><strong>Ayarlar ve yolculuk geçmişi</strong>: tercihleriniz, yolculuk değerlendirmeleriniz ve ayarlama profiliniz yalnızca cihazınızdaki uygulamaya özel depolama alanında tutulur.</li>
     </ul>
@@ -853,7 +853,7 @@
       <table>
         <tr><th>İzin</th><th>Ne için</th></tr>
         <tr><td>Diğer uygulamaların üzerinde göster</td><td>İşaret katmanını okuma uygulamanızın üzerine çizmek</td></tr>
-        <tr><td>Konum (kullanılırken)</td><td>Yolculuğu yalnızca hızdan algılamak; konum asla saklanmaz ve gönderilmez</td></tr>
+        <tr><td>Konum (kullanılırken)</td><td>Yolculuğu hızdan ve gidiş yönünden algılamak; konum asla saklanmaz ve gönderilmez</td></tr>
         <tr><td>Bildirimler</td><td>İşaret denetimleri ve yolculuk sonundaki isteğe bağlı soru</td></tr>
         <tr><td>Kullanım erişimi (isteğe bağlı)</td><td>Seçtiğiniz uygulamaların üzerinde işaretleri otomatik duraklatmak</td></tr>
         <tr><td>Titreşim</td><td>İsteğe bağlı öngörücü dokunsal darbeler</td></tr>
