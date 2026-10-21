@@ -237,13 +237,13 @@
   </nav>
   <section class="policy" id="en" lang="en" dir="ltr">
     <h1>Privacy Policy</h1>
-    <p class="effective">Effective date: October 16, 2026 &middot; Last updated: 2026-10-16</p>
+    <p class="effective">Effective date: October 20, 2026 &middot; Last updated: 2026-10-20</p>
     <div class="tldr"><p>Perusa is a comfort aid that shows visual motion cues over other apps while you ride in a vehicle. The short version: <strong>nothing leaves your device unless you explicitly turn on sharing, and your location never leaves it at all.</strong></p></div>
     <h2>Data the app uses on your device</h2>
     <ul>
       <li><strong>Motion sensors</strong> (accelerometer, gyroscope, rotation): read continuously while the cues run, used only to move the cues. Not recorded, not transmitted.</li>
       <li><strong>Location (GPS)</strong>: used only to compute your <strong>speed</strong> and your <strong>direction of travel</strong>, so cues appear only when you are actually riding in a vehicle and a turn can be told from a straight road. Both are processed in memory on the device. Your <strong>position is never stored and never transmitted</strong> &mdash; the app has no server-side knowledge of where you are or where you have been.</li>
-      <li><strong>Foreground app package name</strong> (optional): if you grant Usage Access for the auto-pause feature, Perusa checks which app is in front so it can pause cues over apps you choose (password managers, banking). This check happens on-device; nothing is stored or sent.</li>
+      <li><strong>Foreground app package name</strong> (optional): if you grant Usage Access for the auto-pause feature, Perusa checks which app is in front so it can pause cues over apps you choose (password managers, banking). This check happens on-device; nothing is stored or sent. The list of apps you choose is kept on your device; their names leave it only if you turn on “Share the apps you add” (see below).</li>
       <li><strong>Settings and drive history</strong>: your preferences, drive ratings, and tuning profile are stored in the app's private storage on your device only. So is the free version’s meter: how much of the free cue time this install has used.</li>
     </ul>
     <h2>Buying the unlock</h2>
@@ -255,7 +255,8 @@
       <li><strong>drive summaries</strong> for drives you rate (a motion-intensity score, your comfort rating, any mid-drive “feeling worse” taps, a rough-drive flag, active tuning parameters, and the slider settings the drive ran under &mdash; cue intensity, cue speed, detection sensitivity),</li>
       <li>now and then, a <strong>short motion clip</strong>: up to about two minutes of the phone’s motion-sensor readings (acceleration and rotation) and the vehicle’s speed and change of direction, with the direction turned to start at zero and no clock time. <strong>A clip never contains a position.</strong> Clips wait on the phone until it is on Wi-Fi and charging; Perusa sends at most 6 from a ride and 20 MB in a month, and deletes unsent clips after 45 days or as soon as you turn sharing off,</li>
       <li>counts of how many drives you have completed in total, how many were too short to rate, and how many you have rated &mdash; plain totals, so a shared summary can be read in proportion,</li>
-      <li>crash and device-compatibility reports (Android version, device model, app version).</li>
+      <li>crash and device-compatibility reports (Android version, device model, app version),</li>
+      <li><strong>only if you also turn on “Share the apps you add”</strong> under Auto-pause over apps (off by default, and turned off again whenever sharing is turned off): the <strong>names of the apps on your Auto-pause list</strong>, as package names (for example <code>com.example.bank</code>), each sent once with a ride summary. We use them to add apps that ignore taps under the cues to the list Perusa suggests to everyone. Perusa never sends when or how often you use any app, and never the names of apps that are not on your list.</li>
     </ul>
     <p>These are linked to a <strong>random install identifier</strong> generated on first run &mdash; not your name, email, phone number, advertising ID, or any hardware identifier. Records from the same install share that identifier, so they can be connected to each other, but not to you as a person. <strong>No location data (positions, routes, or coordinates) is ever included.</strong> The receiving server does not log IP addresses. Turning sharing off stops all uploads immediately.</p>
     <p>If you turned sharing on before Perusa 0.5.0, Perusa keeps sending only the summaries of drives you rate until you answer a one-time question about ride summaries and clips.</p>
@@ -288,13 +289,13 @@
   <section class="policy" id="ar" lang="ar" dir="rtl">
     <p class="xnote">هذه ترجمة لسياسة الخصوصية المكتوبة بالإنجليزية؛ وفي حال وجود أي اختلاف بينهما، يُعتمد <a href="#en">النص الإنجليزي</a>.</p>
     <h1>سياسة الخصوصية</h1>
-    <p class="effective">تاريخ السريان: 16 أكتوبر 2026 &middot; آخر تحديث: 2026-10-16</p>
+    <p class="effective">تاريخ السريان: 20 أكتوبر 2026 &middot; آخر تحديث: 2026-10-20</p>
     <div class="tldr"><p>Perusa وسيلة مساعدة للراحة تعرض مؤشرات حركة مرئية فوق التطبيقات الأخرى أثناء ركوبك في مركبة. باختصار: <strong>لا يخرج شيء من جهازك إلا إذا شغّلت المشاركة بنفسك، وموقعك لا يخرج منه أبدًا.</strong></p></div>
     <h2>البيانات التي يستخدمها التطبيق على جهازك</h2>
     <ul>
       <li><strong>مستشعرات الحركة</strong> (مقياس التسارع والجيروسكوب والدوران): تُقرأ باستمرار أثناء عمل المؤشرات، ولا تُستخدم إلا لتحريك المؤشرات. لا تُسجّل ولا تُرسل.</li>
       <li><strong>الموقع (GPS)</strong>: يُستخدم فقط لحساب <strong>سرعتك</strong> و<strong>اتجاه سيرك</strong>، حتى لا تظهر المؤشرات إلا عندما تكون راكبًا في مركبة فعلًا ويمكن تمييز المنعطف عن الطريق المستقيم. ويُعالَج كلاهما في الذاكرة على الجهاز. <strong>موقعك لا يُخزّن ولا يُرسل أبدًا</strong> &mdash; ليس لدى التطبيق أي معرفة على الخادم بمكانك أو بالأماكن التي كنت فيها.</li>
-      <li><strong>اسم حزمة التطبيق الذي في المقدّمة</strong> (اختياري): إن منحت «الوصول إلى بيانات الاستخدام» من أجل الإيقاف التلقائي، يتحقق Perusa من التطبيق الموجود في المقدّمة ليوقف المؤشرات فوق التطبيقات التي تختارها (مديرو كلمات المرور، الخدمات المصرفية). يحدث هذا التحقق على الجهاز؛ ولا يُخزّن شيء ولا يُرسل.</li>
+      <li><strong>اسم حزمة التطبيق الذي في المقدّمة</strong> (اختياري): إن منحت «الوصول إلى بيانات الاستخدام» من أجل الإيقاف التلقائي، يتحقق Perusa من التطبيق الموجود في المقدّمة ليوقف المؤشرات فوق التطبيقات التي تختارها (مديرو كلمات المرور، الخدمات المصرفية). يحدث هذا التحقق على الجهاز؛ ولا يُخزّن شيء ولا يُرسل. تبقى قائمة التطبيقات التي تختارها على جهازك، ولا تغادره أسماؤها إلا إذا شغّلت «مشاركة التطبيقات التي تضيفها» (انظر أدناه).</li>
       <li><strong>الإعدادات وسجل الرحلات</strong>: تُحفظ تفضيلاتك وتقييماتك للرحلات وملف الضبط في التخزين الخاص بالتطبيق على جهازك وحده. وكذلك عدّاد النسخة المجانية: مقدار ما استخدمه هذا التثبيت من وقت المؤشرات المجاني.</li>
     </ul>
     <h2>شراء فتح القفل</h2>
@@ -306,7 +307,8 @@
       <li><strong>ملخّصات الرحلات</strong> التي تقيّمها (درجة شدة الحركة، تقييمك للراحة، أي نقرات على «أشعر بسوء أكبر» أثناء الرحلة، علامة الرحلة المتعبة، معاملات الضبط المفعّلة، وأوضاع أشرطة التمرير التي عملت الرحلة عليها &mdash; الشدّة، السرعة، الحساسية)،</li>
       <li>ومن حين لآخر <strong>مقطع حركة قصيرًا</strong>: ما يصل إلى دقيقتين تقريبًا من قراءات مستشعرات الحركة في الهاتف (التسارع والدوران) وسرعة المركبة وتغيّر اتجاهها، مع جعل الاتجاه يبدأ من الصفر ودون وقت الساعة. <strong>لا يحتوي المقطع على موقع أبدًا.</strong> تنتظر المقاطع على الهاتف حتى يتصل بشبكة Wi-Fi ويكون قيد الشحن، ولا يرسل Perusa أكثر من 6 مقاطع من الرحلة الواحدة ولا أكثر من 20 ميغابايت في الشهر، ويحذف المقاطع غير المرسلة بعد 45 يومًا أو فور إيقافك المشاركة،</li>
       <li>أعداد الرحلات التي أكملتها إجمالًا، وكم منها كان أقصر من أن يُقيّم، وكم منها قيّمت &mdash; مجاميع بسيطة، حتى يُقرأ الملخّص المُرسل بالنسبة الصحيحة،</li>
-      <li>تقارير الأعطال وتوافق الأجهزة (إصدار Android، طراز الجهاز، إصدار التطبيق).</li>
+      <li>تقارير الأعطال وتوافق الأجهزة (إصدار Android، طراز الجهاز، إصدار التطبيق),</li>
+      <li><strong>فقط إذا شغّلت أيضًا «مشاركة التطبيقات التي تضيفها»</strong> ضمن «إيقاف مؤقت تلقائي فوق التطبيقات» (مُطفأ افتراضيًا، ويُطفأ من جديد كلما أُوقفت المشاركة): <strong>أسماء التطبيقات الموجودة في قائمة الإيقاف المؤقت التلقائي</strong>، بصيغة أسماء الحزم (مثل <code>com.example.bank</code>)، ويُرسل كل اسم مرة واحدة مع ملخّص رحلة. نستخدمها لإضافة التطبيقات التي تتجاهل النقر تحت المؤشرات إلى القائمة التي يقترحها Perusa على الجميع. لا يرسل Perusa أبدًا متى أو كم مرة تستخدم أي تطبيق، ولا أسماء التطبيقات غير الموجودة في قائمتك.</li>
     </ul>
     <p>ترتبط هذه البيانات <strong>بمعرّف عشوائي للتثبيت</strong> يُنشأ عند أول تشغيل &mdash; وليس باسمك أو بريدك أو رقم هاتفك أو المعرّف الإعلاني أو أي معرّف عتاد. السجلات الواردة من التثبيت نفسه تشترك في المعرّف ذاته، فيمكن ربطها ببعضها، لكن لا يمكن ربطها بك كشخص. <strong>لا تُدرج أي بيانات موقع (مواقع أو مسارات أو إحداثيات) أبدًا.</strong> والخادم المُستقبِل لا يُسجّل عناوين IP. وإيقاف المشاركة يوقف كل الرفع فورًا.</p>
     <p>إذا كنت قد فعّلت المشاركة قبل Perusa 0.5.0، فسيواصل Perusa إرسال ملخّصات الرحلات التي تقيّمها فقط إلى أن تجيب عن سؤال يُطرح مرة واحدة بشأن ملخّصات الرحلات والمقاطع.</p>
@@ -339,13 +341,13 @@
   <section class="policy" id="de" lang="de" dir="ltr">
     <p class="xnote">Dies ist eine Übersetzung der englischen Datenschutzerklärung. Bei Abweichungen gilt die <a href="#en">englische Fassung</a>.</p>
     <h1>Datenschutzerklärung</h1>
-    <p class="effective">Gültig ab: 16. Oktober 2026 &middot; Letzte Aktualisierung: 2026-10-16</p>
+    <p class="effective">Gültig ab: 20. Oktober 2026 &middot; Letzte Aktualisierung: 2026-10-20</p>
     <div class="tldr"><p>Perusa ist eine Komforthilfe, die visuelle Bewegungshinweise über anderen Apps anzeigt, während Sie in einem Fahrzeug mitfahren. Kurz gesagt: <strong>Nichts verlässt Ihr Gerät, solange Sie das Teilen nicht ausdrücklich einschalten, und Ihr Standort verlässt es überhaupt nie.</strong></p></div>
     <h2>Daten, die die App auf Ihrem Gerät verwendet</h2>
     <ul>
       <li><strong>Bewegungssensoren</strong> (Beschleunigungssensor, Gyroskop, Rotation): werden fortlaufend gelesen, während die Hinweise laufen, und nur dazu verwendet, die Hinweise zu bewegen. Sie werden nicht aufgezeichnet und nicht übertragen.</li>
       <li><strong>Standort (GPS)</strong>: wird nur verwendet, um Ihre <strong>Geschwindigkeit</strong> und Ihre <strong>Fahrtrichtung</strong> zu berechnen, damit Hinweise nur erscheinen, wenn Sie tatsächlich in einem Fahrzeug mitfahren, und damit eine Kurve von einer geraden Strecke unterschieden werden kann. Beides wird im Arbeitsspeicher auf dem Gerät verarbeitet. Ihre <strong>Position wird nie gespeichert und nie übertragen</strong> &mdash; die App weiß serverseitig nicht, wo Sie sind oder wo Sie gewesen sind.</li>
-      <li><strong>Paketname der App im Vordergrund</strong> (optional): Wenn Sie für die automatische Pause den „Zugriff auf Nutzungsdaten“ erteilen, prüft Perusa, welche App im Vordergrund ist, um die Hinweise über von Ihnen gewählten Apps zu pausieren (Passwortmanager, Banking). Diese Prüfung findet auf dem Gerät statt; nichts wird gespeichert oder gesendet.</li>
+      <li><strong>Paketname der App im Vordergrund</strong> (optional): Wenn Sie für die automatische Pause den „Zugriff auf Nutzungsdaten“ erteilen, prüft Perusa, welche App im Vordergrund ist, um die Hinweise über von Ihnen gewählten Apps zu pausieren (Passwortmanager, Banking). Diese Prüfung findet auf dem Gerät statt; nichts wird gespeichert oder gesendet. Die Liste der Apps, die Sie auswählen, bleibt auf Ihrem Gerät; ihre Namen verlassen es nur, wenn Sie „Hinzugefügte Apps teilen“ einschalten (siehe unten).</li>
       <li><strong>Einstellungen und Fahrtverlauf</strong>: Ihre Voreinstellungen, Fahrtbewertungen und Ihr Anpassungsprofil werden ausschließlich im privaten Speicher der App auf Ihrem Gerät abgelegt. Ebenso der Zähler der kostenlosen Version: wie viel der kostenlosen Hinweiszeit diese Installation verbraucht hat.</li>
     </ul>
     <h2>Die Freischaltung kaufen</h2>
@@ -357,7 +359,8 @@
       <li><strong>Fahrtzusammenfassungen</strong> für Fahrten, die Sie bewerten (ein Bewegungsintensitätswert, Ihre Komfortbewertung, jedes Antippen von „Wird schlechter“ mitten in der Fahrt, eine Markierung für eine unruhige Fahrt, die aktiven Anpassungsparameter und die Reglereinstellungen, unter denen die Fahrt lief &mdash; Intensität, Tempo, Empfindlichkeit),</li>
       <li>ab und zu einen <strong>kurzen Bewegungsausschnitt</strong>: bis zu etwa zwei Minuten Messwerte der Bewegungssensoren des Telefons (Beschleunigung und Drehung) sowie Geschwindigkeit und Richtungsänderung des Fahrzeugs, wobei die Richtung bei null beginnt und keine Uhrzeit enthalten ist. <strong>Ein Ausschnitt enthält nie eine Position.</strong> Ausschnitte warten auf dem Telefon, bis es im WLAN ist und lädt; Perusa sendet höchstens 6 pro Fahrt und 20 MB im Monat und löscht nicht gesendete Ausschnitte nach 45 Tagen oder sobald Sie das Teilen ausschalten,</li>
       <li>Angaben dazu, wie viele Fahrten Sie insgesamt abgeschlossen haben, wie viele zu kurz zum Bewerten waren und wie viele Sie bewertet haben &mdash; einfache Gesamtzahlen, damit eine geteilte Zusammenfassung im richtigen Verhältnis gelesen werden kann,</li>
-      <li>Absturz- und Gerätekompatibilitätsberichte (Android-Version, Gerätemodell, App-Version).</li>
+      <li>Absturz- und Gerätekompatibilitätsberichte (Android-Version, Gerätemodell, App-Version),</li>
+      <li><strong>nur wenn Sie zusätzlich „Hinzugefügte Apps teilen“ einschalten</strong> (unter „Automatisch pausieren“; standardmäßig aus und wieder aus, sobald das Teilen ausgeschaltet wird): die <strong>Namen der Apps auf Ihrer Pausenliste</strong> als Paketnamen (zum Beispiel <code>com.example.bank</code>), jeder einmal mit einer Fahrtzusammenfassung gesendet. Damit nehmen wir Apps, die unter den Hinweisen Tippen ignorieren, in die Liste auf, die Perusa allen vorschlägt. Perusa sendet nie, wann oder wie oft Sie eine App nutzen, und nie die Namen von Apps, die nicht auf Ihrer Liste stehen.</li>
     </ul>
     <p>Diese Angaben sind mit einer <strong>zufälligen Installationskennung</strong> verknüpft, die beim ersten Start erzeugt wird &mdash; nicht mit Ihrem Namen, Ihrer E-Mail-Adresse, Ihrer Telefonnummer, einer Werbe-ID oder irgendeiner Hardware-Kennung. Aufzeichnungen aus derselben Installation tragen dieselbe Kennung und lassen sich daher miteinander verknüpfen, nicht aber mit Ihnen als Person. <strong>Standortdaten (Positionen, Routen oder Koordinaten) sind niemals enthalten.</strong> Der empfangende Server protokolliert keine IP-Adressen. Wenn Sie das Teilen ausschalten, hören alle Uploads sofort auf.</p>
     <p>Wenn Sie das Teilen vor Perusa 0.5.0 eingeschaltet haben, sendet Perusa weiterhin nur die Zusammenfassungen bewerteter Fahrten, bis Sie eine einmalige Frage zu Fahrtzusammenfassungen und Ausschnitten beantworten.</p>
@@ -390,13 +393,13 @@
   <section class="policy" id="es" lang="es" dir="ltr">
     <p class="xnote">Esta es una traducción de la política de privacidad en inglés. Si ambas difieren, prevalece la <a href="#en">versión en inglés</a>.</p>
     <h1>Política de privacidad</h1>
-    <p class="effective">Fecha de entrada en vigor: 16 de octubre de 2026 &middot; Última actualización: 2026-10-16</p>
+    <p class="effective">Fecha de entrada en vigor: 20 de octubre de 2026 &middot; Última actualización: 2026-10-20</p>
     <div class="tldr"><p>Perusa es una ayuda para viajar más cómodo que muestra señales de movimiento visuales sobre otras apps mientras vas en un vehículo. En resumen: <strong>nada sale de tu dispositivo a menos que actives expresamente el envío, y tu ubicación no sale de él nunca.</strong></p></div>
     <h2>Datos que la app usa en tu dispositivo</h2>
     <ul>
       <li><strong>Sensores de movimiento</strong> (acelerómetro, giroscopio, rotación): se leen de forma continua mientras funcionan las señales, y solo se usan para mover las señales. No se graban ni se transmiten.</li>
       <li><strong>Ubicación (GPS)</strong>: se usa únicamente para calcular tu <strong>velocidad</strong> y tu <strong>dirección de la marcha</strong>, de modo que las señales aparezcan solo cuando de verdad vas en un vehículo y se pueda distinguir una curva de una recta. Ambas se procesan en memoria, en el dispositivo. Tu <strong>posición nunca se guarda ni se transmite</strong> &mdash; la app no tiene ningún conocimiento en el servidor de dónde estás ni de dónde has estado.</li>
-      <li><strong>Nombre del paquete de la app en primer plano</strong> (opcional): si concedes el «acceso a datos de uso» para la pausa automática, Perusa comprueba qué app está en primer plano para poder pausar las señales sobre las apps que elijas (gestores de contraseñas, banca). Esa comprobación ocurre en el dispositivo; no se guarda ni se envía nada.</li>
+      <li><strong>Nombre del paquete de la app en primer plano</strong> (opcional): si concedes el «acceso a datos de uso» para la pausa automática, Perusa comprueba qué app está en primer plano para poder pausar las señales sobre las apps que elijas (gestores de contraseñas, banca). Esa comprobación ocurre en el dispositivo; no se guarda ni se envía nada. La lista de apps que eliges se guarda en tu dispositivo; sus nombres solo salen de él si activas «Compartir las apps que añades» (ver más abajo).</li>
       <li><strong>Ajustes e historial de viajes</strong>: tus preferencias, tus valoraciones de los viajes y tu perfil de ajuste se guardan solo en el almacenamiento privado de la app, en tu dispositivo. También el contador de la versión gratuita: cuánto tiempo de señales gratuito ha usado esta instalación.</li>
     </ul>
     <h2>Comprar el desbloqueo</h2>
@@ -408,7 +411,8 @@
       <li><strong>resúmenes de viaje</strong> de los viajes que valoras (una puntuación de intensidad de movimiento, tu valoración de comodidad, cualquier toque en «Me siento peor» a mitad del viaje, una marca de viaje difícil, los parámetros de ajuste activos y la posición de los controles con la que se ejecutó el viaje &mdash; intensidad, velocidad, sensibilidad),</li>
       <li>de vez en cuando, un <strong>breve fragmento de movimiento</strong>: hasta unos dos minutos de lecturas de los sensores de movimiento del teléfono (aceleración y rotación) y la velocidad y el cambio de dirección del vehículo, con la dirección llevada a cero al inicio y sin hora. <strong>Un fragmento nunca contiene una posición.</strong> Los fragmentos esperan en el teléfono hasta que esté conectado a wifi y cargando; Perusa envía como máximo 6 por viaje y 20 MB al mes, y borra los fragmentos no enviados a los 45 días o en cuanto dejas de compartir,</li>
       <li>el número de viajes que has completado en total, cuántos fueron demasiado cortos para valorarlos y cuántos has valorado &mdash; totales simples, para que un resumen enviado pueda leerse en su justa proporción,</li>
-      <li>informes de fallos y de compatibilidad del dispositivo (versión de Android, modelo del dispositivo, versión de la app).</li>
+      <li>informes de fallos y de compatibilidad del dispositivo (versión de Android, modelo del dispositivo, versión de la app),</li>
+      <li><strong>solo si además activas «Compartir las apps que añades»</strong> en Pausa automática (desactivado por defecto, y se desactiva de nuevo cada vez que se desactiva el envío): los <strong>nombres de las apps de tu lista de Pausa automática</strong>, como nombres de paquete (por ejemplo <code>com.example.bank</code>), cada uno enviado una sola vez con un resumen de viaje. Los usamos para añadir a la lista que Perusa sugiere a todos las apps que ignoran los toques bajo las señales. Perusa nunca envía cuándo ni con qué frecuencia usas una app, ni los nombres de apps que no están en tu lista.</li>
     </ul>
     <p>Todo esto va unido a un <strong>identificador aleatorio de instalación</strong> generado en el primer arranque &mdash; no a tu nombre, correo, número de teléfono, identificador de publicidad ni ningún identificador del hardware. Los registros de la misma instalación comparten ese identificador, por lo que se pueden relacionar entre sí, pero no contigo como persona. <strong>Nunca se incluye ningún dato de ubicación (posiciones, rutas o coordenadas).</strong> El servidor que los recibe no registra direcciones IP. Al desactivar el envío, todas las subidas se detienen de inmediato.</p>
     <p>Si activaste la opción de compartir antes de Perusa 0.5.0, Perusa sigue enviando solo los resúmenes de los viajes que valoras hasta que respondas a una pregunta única sobre los resúmenes de viaje y los fragmentos.</p>
@@ -441,13 +445,13 @@
   <section class="policy" id="fr" lang="fr" dir="ltr">
     <p class="xnote">Ceci est une traduction de la politique de confidentialité en anglais. En cas de divergence, la <a href="#en">version anglaise</a> prévaut.</p>
     <h1>Politique de confidentialité</h1>
-    <p class="effective">Date d’entrée en vigueur&nbsp;: 16 octobre 2026 &middot; Dernière mise à jour&nbsp;: 2026-10-16</p>
+    <p class="effective">Date d’entrée en vigueur&nbsp;: 20 octobre 2026 &middot; Dernière mise à jour&nbsp;: 2026-10-20</p>
     <div class="tldr"><p>Perusa est une aide au confort qui affiche des repères de mouvement visuels par-dessus d’autres applications pendant que vous êtes passager d’un véhicule. En résumé&nbsp;: <strong>rien ne quitte votre appareil si vous n’activez pas expressément le partage, et votre position ne le quitte jamais.</strong></p></div>
     <h2>Données que l’application utilise sur votre appareil</h2>
     <ul>
       <li><strong>Capteurs de mouvement</strong> (accéléromètre, gyroscope, rotation)&nbsp;: lus en continu pendant que les repères fonctionnent, et utilisés uniquement pour déplacer les repères. Ni enregistrés, ni transmis.</li>
       <li><strong>Position (GPS)</strong>&nbsp;: utilisée uniquement pour calculer votre <strong>vitesse</strong> et votre <strong>direction de déplacement</strong>, afin que les repères n’apparaissent que lorsque vous roulez réellement dans un véhicule et qu’un virage puisse être distingué d’une route droite. Les deux sont traités en mémoire, sur l’appareil. Votre <strong>position n’est jamais enregistrée ni jamais transmise</strong> &mdash; l’application n’a, côté serveur, aucune connaissance de l’endroit où vous êtes ni de ceux où vous avez été.</li>
-      <li><strong>Nom du paquet de l’application au premier plan</strong> (facultatif)&nbsp;: si vous accordez l’«&nbsp;accès aux données d’utilisation&nbsp;» pour la pause automatique, Perusa vérifie quelle application est au premier plan afin de mettre les repères en pause sur les applications que vous choisissez (gestionnaires de mots de passe, banque). Cette vérification a lieu sur l’appareil&nbsp;; rien n’est enregistré ni envoyé.</li>
+      <li><strong>Nom du paquet de l’application au premier plan</strong> (facultatif)&nbsp;: si vous accordez l’«&nbsp;accès aux données d’utilisation&nbsp;» pour la pause automatique, Perusa vérifie quelle application est au premier plan afin de mettre les repères en pause sur les applications que vous choisissez (gestionnaires de mots de passe, banque). Cette vérification a lieu sur l’appareil&nbsp;; rien n’est enregistré ni envoyé. La liste des applications que vous choisissez reste sur votre appareil&nbsp;; leurs noms n’en sortent que si vous activez «&nbsp;Partager les applis ajoutées&nbsp;» (voir plus bas).</li>
       <li><strong>Réglages et historique des trajets</strong>&nbsp;: vos préférences, vos évaluations de trajets et votre profil d’adaptation sont conservés uniquement dans le stockage privé de l’application, sur votre appareil. Il en va de même du compteur de la version gratuite&nbsp;: la part du temps de repères gratuit déjà utilisée par cette installation.</li>
     </ul>
     <h2>Acheter le déblocage</h2>
@@ -459,7 +463,8 @@
       <li>des <strong>résumés de trajet</strong> pour les trajets que vous évaluez (un score d’intensité de mouvement, votre note de confort, les éventuelles pressions sur «&nbsp;Ça empire&nbsp;» en cours de trajet, un indicateur de trajet difficile, les paramètres d’adaptation actifs et la position des curseurs pendant le trajet &mdash; intensité, vitesse, sensibilité),</li>
       <li>de temps en temps, un <strong>court extrait de mouvement</strong>&nbsp;: jusqu’à environ deux minutes de mesures des capteurs de mouvement du téléphone (accélération et rotation) ainsi que la vitesse du véhicule et ses changements de direction, la direction étant ramenée à zéro au départ et sans heure. <strong>Un extrait ne contient jamais de position.</strong> Les extraits attendent sur le téléphone qu’il soit en Wi-Fi et en charge&nbsp;; Perusa en envoie au plus 6 par trajet et 20&nbsp;Mo par mois, et supprime les extraits non envoyés après 45&nbsp;jours ou dès que vous désactivez le partage,</li>
       <li>le nombre de trajets que vous avez effectués au total, combien étaient trop courts pour être évalués et combien vous en avez évalués &mdash; de simples totaux, pour qu’un résumé envoyé puisse se lire dans ses justes proportions,</li>
-      <li>des rapports de plantage et de compatibilité des appareils (version d’Android, modèle de l’appareil, version de l’application).</li>
+      <li>des rapports de plantage et de compatibilité des appareils (version d’Android, modèle de l’appareil, version de l’application),</li>
+      <li><strong>seulement si vous activez aussi «&nbsp;Partager les applis ajoutées&nbsp;»</strong> dans Pause automatique (désactivé par défaut, et désactivé à nouveau chaque fois que le partage est désactivé)&nbsp;: les <strong>noms des applications de votre liste de pause automatique</strong>, sous forme de noms de paquet (par exemple <code>com.example.bank</code>), chacun envoyé une seule fois avec un résumé de trajet. Nous les utilisons pour ajouter à la liste que Perusa propose à tous les applications qui ignorent les appuis sous les repères. Perusa n’envoie jamais quand ni à quelle fréquence vous utilisez une application, ni le nom des applications qui ne sont pas sur votre liste.</li>
     </ul>
     <p>Ces données sont rattachées à un <strong>identifiant aléatoire d’installation</strong> généré au premier lancement &mdash; pas à votre nom, votre e-mail, votre numéro de téléphone, un identifiant publicitaire ou un quelconque identifiant matériel. Les enregistrements provenant de la même installation partagent cet identifiant&nbsp;: ils peuvent donc être reliés entre eux, mais pas à vous en tant que personne. <strong>Aucune donnée de localisation (positions, itinéraires ou coordonnées) n’est jamais incluse.</strong> Le serveur destinataire ne journalise pas les adresses IP. Désactiver le partage arrête immédiatement tous les envois.</p>
     <p>Si vous avez activé le partage avant Perusa 0.5.0, Perusa continue de n’envoyer que les résumés des trajets que vous évaluez, jusqu’à ce que vous répondiez à une question unique sur les résumés de trajet et les extraits.</p>
@@ -492,13 +497,13 @@
   <section class="policy" id="it" lang="it" dir="ltr">
     <p class="xnote">Questa è una traduzione dell’informativa sulla privacy in inglese. In caso di difformità, prevale la <a href="#en">versione inglese</a>.</p>
     <h1>Informativa sulla privacy</h1>
-    <p class="effective">Data di entrata in vigore: 16 ottobre 2026 &middot; Ultimo aggiornamento: 2026-10-16</p>
+    <p class="effective">Data di entrata in vigore: 20 ottobre 2026 &middot; Ultimo aggiornamento: 2026-10-20</p>
     <div class="tldr"><p>Perusa è un ausilio per il comfort che mostra segnali di movimento visivi sopra le altre app mentre viaggi in un veicolo. In breve: <strong>nulla lascia il tuo dispositivo se non attivi espressamente la condivisione, e la tua posizione non lo lascia mai.</strong></p></div>
     <h2>Dati che l’app usa sul tuo dispositivo</h2>
     <ul>
       <li><strong>Sensori di movimento</strong> (accelerometro, giroscopio, rotazione): letti in continuo mentre i segnali sono attivi e usati soltanto per muovere i segnali. Non vengono registrati né trasmessi.</li>
       <li><strong>Posizione (GPS)</strong>: usata solo per calcolare la tua <strong>velocità</strong> e la tua <strong>direzione di marcia</strong>, così che i segnali compaiano solo quando stai davvero viaggiando in un veicolo e una curva possa essere distinta da una strada dritta. Entrambe vengono elaborate in memoria, sul dispositivo. La tua <strong>posizione non viene mai memorizzata né mai trasmessa</strong> &mdash; lato server l’app non sa dove sei né dove sei stato.</li>
-      <li><strong>Nome del pacchetto dell’app in primo piano</strong> (facoltativo): se concedi l’«accesso ai dati di utilizzo» per la pausa automatica, Perusa controlla quale app è in primo piano per poter mettere in pausa i segnali sopra le app che scegli (gestori di password, banche). Questo controllo avviene sul dispositivo; nulla viene memorizzato o inviato.</li>
+      <li><strong>Nome del pacchetto dell’app in primo piano</strong> (facoltativo): se concedi l’«accesso ai dati di utilizzo» per la pausa automatica, Perusa controlla quale app è in primo piano per poter mettere in pausa i segnali sopra le app che scegli (gestori di password, banche). Questo controllo avviene sul dispositivo; nulla viene memorizzato o inviato. L’elenco delle app che scegli resta sul tuo dispositivo; i loro nomi ne escono solo se attivi «Condividi le app che aggiungi» (vedi sotto).</li>
       <li><strong>Impostazioni e cronologia dei viaggi</strong>: le tue preferenze, le valutazioni dei viaggi e il tuo profilo di adattamento sono conservati solo nella memoria privata dell’app, sul tuo dispositivo. Lo stesso vale per il contatore della versione gratuita: quanta parte del tempo di segnali gratuito ha usato questa installazione.</li>
     </ul>
     <h2>Acquistare lo sblocco</h2>
@@ -510,7 +515,8 @@
       <li><strong>riepiloghi dei viaggi</strong> che valuti (un punteggio di intensità del movimento, la tua valutazione del comfort, eventuali tocchi su «Sto peggio» durante il viaggio, un contrassegno di viaggio difficile, i parametri di adattamento attivi e la posizione dei cursori con cui il viaggio è stato eseguito &mdash; intensità del segnale, velocità del segnale, sensibilità),</li>
       <li>di tanto in tanto, un <strong>breve spezzone di movimento</strong>: fino a circa due minuti di letture dei sensori di movimento del telefono (accelerazione e rotazione) e la velocità e i cambi di direzione del veicolo, con la direzione riportata a zero all’inizio e senza orario. <strong>Uno spezzone non contiene mai una posizione.</strong> Gli spezzoni restano sul telefono finché non è connesso al Wi-Fi e in carica; Perusa ne invia al massimo 6 per viaggio e 20 MB al mese, ed elimina quelli non inviati dopo 45 giorni o appena disattivi la condivisione,</li>
       <li>il numero di viaggi che hai completato in totale, quanti erano troppo brevi per essere valutati e quanti ne hai valutati &mdash; semplici totali, perché un riepilogo inviato possa essere letto nelle giuste proporzioni,</li>
-      <li>segnalazioni di arresto anomalo e di compatibilità del dispositivo (versione di Android, modello del dispositivo, versione dell’app).</li>
+      <li>segnalazioni di arresto anomalo e di compatibilità del dispositivo (versione di Android, modello del dispositivo, versione dell’app),</li>
+      <li><strong>solo se attivi anche «Condividi le app che aggiungi»</strong> in Pausa automatica (disattivato per impostazione predefinita, e disattivato di nuovo ogni volta che la condivisione viene disattivata): i <strong>nomi delle app nel tuo elenco di pausa automatica</strong>, come nomi di pacchetto (per esempio <code>com.example.bank</code>), ciascuno inviato una sola volta con un riepilogo del viaggio. Li usiamo per aggiungere all’elenco che Perusa suggerisce a tutti le app che ignorano i tocchi sotto i segnali. Perusa non invia mai quando o quanto spesso usi un’app, né i nomi delle app che non sono nel tuo elenco.</li>
     </ul>
     <p>Questi dati sono collegati a un <strong>identificativo casuale dell’installazione</strong> generato al primo avvio &mdash; non al tuo nome, alla tua email, al tuo numero di telefono, a un ID pubblicitario o a qualsiasi identificativo hardware. I record provenienti dalla stessa installazione condividono quell’identificativo, quindi possono essere collegati tra loro, ma non a te come persona. <strong>Nessun dato di posizione (posizioni, percorsi o coordinate) viene mai incluso.</strong> Il server che li riceve non registra gli indirizzi IP. Disattivare la condivisione interrompe immediatamente tutti i caricamenti.</p>
     <p>Se hai attivato la condivisione prima di Perusa 0.5.0, Perusa continua a inviare solo i riepiloghi dei viaggi che valuti finché non rispondi a una domanda, posta una sola volta, sui riepiloghi dei viaggi e sugli spezzoni.</p>
@@ -543,13 +549,13 @@
   <section class="policy" id="ja" lang="ja" dir="ltr">
     <p class="xnote">これは英語版プライバシーポリシーの翻訳です。内容が異なる場合は<a href="#en">英語版</a>が優先されます。</p>
     <h1>プライバシーポリシー</h1>
-    <p class="effective">発効日: 2026年10月16日 &middot; 最終更新: 2026-10-16</p>
+    <p class="effective">発効日: 2026年10月20日 &middot; 最終更新: 2026-10-20</p>
     <div class="tldr"><p>Perusa は、車両に同乗しているあいだ、他のアプリの上にモーション表示を重ねて見せる快適さのための補助ツールです。簡単に言えば: <strong>共有を自分でオンにしない限り何も端末から出ません。そして位置情報は一切端末から出ません。</strong></p></div>
     <h2>アプリが端末内で使うデータ</h2>
     <ul>
       <li><strong>モーションセンサー</strong>（加速度センサー、ジャイロスコープ、回転）: 表示が動いているあいだ継続的に読み取られ、表示を動かすためだけに使われます。記録も送信もされません。</li>
       <li><strong>位置情報（GPS）</strong>: <strong>速度</strong>と<strong>進行方向</strong>を算出するためだけに使い、実際に車両で移動しているときだけ表示が出るように、またカーブと直線路を見分けられるようにします。どちらも端末内のメモリで処理されます。<strong>位置は保存も送信も一切されません</strong> &mdash; サーバー側では、あなたがどこにいるのか、どこにいたのかを一切把握していません。</li>
-      <li><strong>前面にあるアプリのパッケージ名</strong>（任意）: 自動一時停止のために「使用状況へのアクセス」を許可した場合、Perusa はどのアプリが前面にあるかを確かめ、あなたが選んだアプリ（パスワード管理、銀行）の上では表示を一時停止します。この確認は端末内で行われ、何も保存されず送信されません。</li>
+      <li><strong>前面にあるアプリのパッケージ名</strong>（任意）: 自動一時停止のために「使用状況へのアクセス」を許可した場合、Perusa はどのアプリが前面にあるかを確かめ、あなたが選んだアプリ（パスワード管理、銀行）の上では表示を一時停止します。この確認は端末内で行われ、何も保存されず送信されません。選んだアプリのリストは端末内に保存され、その名前が端末の外に出るのは「追加したアプリを共有」をオンにした場合だけです（下記参照）。</li>
       <li><strong>設定と移動の履歴</strong>: 設定、移動の評価、チューニングのプロファイルは、すべて端末内のアプリ専用領域にのみ保存されます。無料版のメーター（このインストールが無料の合図時間をどれだけ使ったか）も同様です。</li>
     </ul>
     <h2>ロック解除の購入</h2>
@@ -562,6 +568,7 @@
       <li>ときどき、<strong>短いモーションクリップ</strong>：端末のモーションセンサーの値（加速度と回転）と、車両の速度と向きの変化を最大約 2 分間。向きは開始時を 0 として記録し、時刻は含みません。<strong>クリップに位置が含まれることはありません。</strong>クリップは端末が Wi-Fi に接続されて充電中になるまで端末内で待機します。Perusa が送るのは 1 回の移動につき最大 6 件、1 か月に最大 20 MB までで、送られなかったクリップは 45 日後、または共有をオフにした時点で削除されます。</li>
       <li>完了した移動の累計件数、評価できないほど短かった件数、評価した件数 &mdash; 送られた要約を正しい割合で読めるようにするための、単純な総数です、</li>
       <li>クラッシュと端末互換性のレポート（Android のバージョン、端末モデル、アプリのバージョン）。</li>
+      <li><strong>「自動一時停止」で「追加したアプリを共有」もオンにした場合のみ</strong>（初期設定はオフ。共有をオフにすると、これも再びオフになります）: <strong>自動一時停止リストにあるアプリの名前</strong>をパッケージ名（例: <code>com.example.bank</code>）として、移動の要約と一緒にそれぞれ一度だけ送信します。合図の下でタップを受け付けないアプリを、Perusa が全員に提案するリストに加えるために使います。Perusa が、アプリをいつ・どれくらい使ったかや、リストにないアプリの名前を送ることはありません。</li>
     </ul>
     <p>これらは、初回起動時に生成される<strong>インストールごとのランダムな ID</strong> に紐付けられます &mdash; 氏名、メールアドレス、電話番号、広告 ID、その他いかなるハードウェア識別子でもありません。同じインストールから送られた記録は同じ ID を共有するため、記録同士を結び付けることはできますが、個人としてのあなたに結び付けることはできません。<strong>位置情報（位置、経路、座標）は一切含まれません。</strong>受信側のサーバーは IP アドレスを記録しません。共有をオフにすると、すべてのアップロードが直ちに止まります。</p>
     <p>Perusa 0.5.0 より前に共有をオンにしていた場合、移動の要約とクリップに関する 1 回だけの質問に答えるまで、Perusa は評価した移動の要約だけを送り続けます。</p>
@@ -594,13 +601,13 @@
   <section class="policy" id="ko" lang="ko" dir="ltr">
     <p class="xnote">이 문서는 영문 개인정보 처리방침의 번역본입니다. 내용이 다를 경우 <a href="#en">영문판</a>이 우선합니다.</p>
     <h1>개인정보 처리방침</h1>
-    <p class="effective">시행일: 2026년 10월 16일 &middot; 최종 수정: 2026-10-16</p>
+    <p class="effective">시행일: 2026년 10월 20일 &middot; 최종 수정: 2026-10-20</p>
     <div class="tldr"><p>Perusa는 차량에 동승해 이동하는 동안 다른 앱 위에 시각적 모션 표시를 보여 주는 편안함 보조 도구입니다. 짧게 말하면: <strong>공유를 직접 켜지 않는 한 어느 것도 기기를 나가지 않으며, 위치는 아예 나가지 않습니다.</strong></p></div>
     <h2>앱이 기기에서 사용하는 데이터</h2>
     <ul>
       <li><strong>모션 센서</strong>(가속도계, 자이로스코프, 회전): 표시가 동작하는 동안 계속 읽으며, 표시를 움직이는 데에만 사용됩니다. 기록하지도, 전송하지도 않습니다.</li>
       <li><strong>위치(GPS)</strong>: <strong>속도</strong>와 <strong>진행 방향</strong>을 계산하는 데에만 사용되어, 실제로 차량으로 이동할 때만 표시가 나타나고 커브와 직선 도로를 구별할 수 있습니다. 둘 다 기기 안의 메모리에서 처리됩니다. <strong>위치는 절대 저장하거나 전송하지 않습니다</strong> &mdash; 서버 쪽에서는 사용자가 어디에 있는지, 어디에 있었는지 전혀 알 수 없습니다.</li>
-      <li><strong>전면에 있는 앱의 패키지 이름</strong>(선택): 자동 일시 정지 기능을 위해 ‘사용 정보 접근’을 허용하면, Perusa는 어느 앱이 전면에 있는지 확인하여 직접 선택한 앱(비밀번호 관리자, 은행) 위에서는 표시를 일시 정지합니다. 이 확인은 기기에서 이루어지며, 아무것도 저장하거나 보내지 않습니다.</li>
+      <li><strong>전면에 있는 앱의 패키지 이름</strong>(선택): 자동 일시 정지 기능을 위해 ‘사용 정보 접근’을 허용하면, Perusa는 어느 앱이 전면에 있는지 확인하여 직접 선택한 앱(비밀번호 관리자, 은행) 위에서는 표시를 일시 정지합니다. 이 확인은 기기에서 이루어지며, 아무것도 저장하거나 보내지 않습니다. 고른 앱 목록은 기기에 보관되며, 앱 이름은 ‘추가한 앱 공유’를 켰을 때만 기기 밖으로 나갑니다(아래 참고).</li>
       <li><strong>설정과 이동 기록</strong>: 선택한 설정, 이동 평가, 튜닝 프로필은 기기 안의 앱 전용 저장 공간에만 보관됩니다. 무료 버전의 사용량(이 설치가 무료 표시 시간을 얼마나 썼는지)도 마찬가지입니다.</li>
     </ul>
     <h2>잠금 해제 구매</h2>
@@ -612,7 +619,8 @@
       <li>평가한 이동의 <strong>이동 요약</strong>(모션 강도 점수, 편안함 평가, 이동 중에 ‘더 나빠짐’을 누른 횟수, 힘든 이동 표시, 활성 튜닝 매개변수, 그리고 그 이동에 사용된 슬라이더 설정 &mdash; 강도, 속도, 민감도),</li>
       <li>가끔 <strong>짧은 모션 클립</strong>: 휴대폰 모션 센서 값(가속도와 회전)과 차량의 속도 및 방향 변화를 최대 약 2분 동안 담습니다. 방향은 0에서 시작하도록 바꾸며 시각은 담지 않습니다. <strong>클립에는 위치가 절대 들어가지 않습니다.</strong> 클립은 휴대폰이 Wi-Fi에 연결되어 충전 중일 때까지 휴대폰에서 기다립니다. Perusa는 이동 한 번에 최대 6개, 한 달에 최대 20MB를 보내며, 보내지 않은 클립은 45일이 지나거나 공유를 끄는 즉시 삭제합니다.</li>
       <li>지금까지 마친 이동의 전체 개수, 평가하기에 너무 짧았던 개수, 평가한 개수 &mdash; 보낸 요약을 올바른 비율로 읽을 수 있도록 하는 단순한 합입니다,</li>
-      <li>오류 및 기기 호환성 보고(Android 버전, 기기 모델, 앱 버전).</li>
+      <li>오류 및 기기 호환성 보고(Android 버전, 기기 모델, 앱 버전),</li>
+      <li><strong>자동 일시정지에서 ‘추가한 앱 공유’도 켠 경우에만</strong>(기본값은 꺼짐이며, 공유를 끌 때마다 다시 꺼집니다): <strong>자동 일시정지 목록에 있는 앱의 이름</strong>을 패키지 이름(예: <code>com.example.bank</code>)으로, 각각 한 번씩 이동 요약과 함께 보냅니다. 표시 아래에서 탭을 받지 않는 앱을 Perusa가 모두에게 제안하는 목록에 추가하는 데 씁니다. Perusa는 앱을 언제, 얼마나 자주 쓰는지와 목록에 없는 앱의 이름은 절대 보내지 않습니다.</li>
     </ul>
     <p>이 데이터는 최초 실행 시 생성된 <strong>임의의 설치 식별자</strong>에 연결됩니다 &mdash; 이름, 이메일, 전화번호, 광고 ID, 그 어떤 하드웨어 식별자도 아닙니다. 같은 설치에서 보낸 기록은 같은 식별자를 공유하므로 서로 연결할 수 있지만, 개인인 본인과는 연결할 수 없습니다. <strong>위치 데이터(위치, 경로, 좌표)는 절대 포함되지 않습니다.</strong> 수신 서버는 IP 주소를 기록하지 않습니다. 공유를 끄면 모든 업로드가 즉시 중단됩니다.</p>
     <p>Perusa 0.5.0 이전에 공유를 켰다면, 이동 요약과 클립에 관한 한 번뿐인 질문에 답할 때까지 Perusa는 평가한 이동의 요약만 계속 보냅니다.</p>
@@ -645,13 +653,13 @@
   <section class="policy" id="nl" lang="nl" dir="ltr">
     <p class="xnote">Dit is een vertaling van het Engelse privacybeleid. Bij verschillen geldt de <a href="#en">Engelse versie</a>.</p>
     <h1>Privacybeleid</h1>
-    <p class="effective">Ingangsdatum: 16 oktober 2026 &middot; Laatst bijgewerkt: 2026-10-16</p>
+    <p class="effective">Ingangsdatum: 20 oktober 2026 &middot; Laatst bijgewerkt: 2026-10-20</p>
     <div class="tldr"><p>Perusa is een comforthulp die visuele bewegingssignalen over andere apps laat zien terwijl je in een voertuig meerijdt. Kort gezegd: <strong>er gaat niets van je toestel af tenzij je delen zelf aanzet, en je locatie gaat er nooit af.</strong></p></div>
     <h2>Gegevens die de app op je toestel gebruikt</h2>
     <ul>
       <li><strong>Bewegingssensoren</strong> (versnellingsmeter, gyroscoop, rotatie): worden continu uitgelezen terwijl de signalen lopen, en alleen gebruikt om de signalen te bewegen. Ze worden niet opgeslagen en niet verstuurd.</li>
       <li><strong>Locatie (gps)</strong>: wordt alleen gebruikt om je <strong>snelheid</strong> en je <strong>rijrichting</strong> te berekenen, zodat signalen alleen verschijnen wanneer je echt in een voertuig meerijdt en een bocht van een rechte weg te onderscheiden is. Beide worden in het werkgeheugen op het toestel verwerkt. Je <strong>positie wordt nooit opgeslagen en nooit verstuurd</strong> &mdash; de app weet aan de serverkant niet waar je bent of waar je bent geweest.</li>
-      <li><strong>Pakketnaam van de app op de voorgrond</strong> (optioneel): als je ‘toegang tot gebruiksgegevens’ geeft voor het automatisch pauzeren, kijkt Perusa welke app vooraan staat, zodat de signalen kunnen pauzeren over apps die je zelf kiest (wachtwoordmanagers, bankieren). Die controle gebeurt op het toestel; er wordt niets opgeslagen of verstuurd.</li>
+      <li><strong>Pakketnaam van de app op de voorgrond</strong> (optioneel): als je ‘toegang tot gebruiksgegevens’ geeft voor het automatisch pauzeren, kijkt Perusa welke app vooraan staat, zodat de signalen kunnen pauzeren over apps die je zelf kiest (wachtwoordmanagers, bankieren). Die controle gebeurt op het toestel; er wordt niets opgeslagen of verstuurd. De lijst met apps die je kiest blijft op je toestel; de namen verlaten het alleen als je ‘Toegevoegde apps delen’ aanzet (zie hieronder).</li>
       <li><strong>Instellingen en rittengeschiedenis</strong>: je voorkeuren, je beoordelingen van ritten en je afstemprofiel worden alleen in de privéopslag van de app op je toestel bewaard. Dat geldt ook voor de teller van de gratis versie: hoeveel van de gratis signaaltijd deze installatie heeft gebruikt.</li>
     </ul>
     <h2>De ontgrendeling kopen</h2>
@@ -663,7 +671,8 @@
       <li><strong>ritsamenvattingen</strong> van ritten die je beoordeelt (een score voor bewegingsintensiteit, jouw comfortbeoordeling, eventuele tikken op ‘Voelt slechter’ tijdens de rit, een markering voor een zware rit, de actieve afstemparameters en de schuifinstellingen waarmee de rit liep &mdash; sterkte van de signalen, signaalsnelheid, gevoeligheid),</li>
       <li>af en toe een <strong>korte bewegingsclip</strong>: tot ongeveer twee minuten metingen van de bewegingssensoren van het toestel (versnelling en draaiing) en de snelheid en richtingsverandering van het voertuig, waarbij de richting op nul begint en zonder kloktijd. <strong>Een clip bevat nooit een positie.</strong> Clips wachten op het toestel tot het op wifi zit en oplaadt; Perusa stuurt er hoogstens 6 per rit en 20 MB per maand, en verwijdert niet-verstuurde clips na 45 dagen of zodra je delen uitzet,</li>
       <li>hoeveel ritten je in totaal hebt afgerond, hoeveel er te kort waren om te beoordelen en hoeveel je hebt beoordeeld &mdash; gewone totalen, zodat een verstuurde samenvatting in verhouding te lezen is,</li>
-      <li>crash- en toestelcompatibiliteitsrapporten (Android-versie, toestelmodel, app-versie).</li>
+      <li>crash- en toestelcompatibiliteitsrapporten (Android-versie, toestelmodel, app-versie),</li>
+      <li><strong>alleen als je ook ‘Toegevoegde apps delen’ aanzet</strong> bij Automatisch pauzeren bij apps (standaard uit, en weer uit zodra delen wordt uitgezet): de <strong>namen van de apps op je pauzelijst</strong>, als pakketnamen (bijvoorbeeld <code>com.example.bank</code>), elk één keer verstuurd met een ritsamenvatting. We gebruiken ze om apps die tikken onder de signalen negeren toe te voegen aan de lijst die Perusa iedereen voorstelt. Perusa verstuurt nooit wanneer of hoe vaak je een app gebruikt, en nooit de namen van apps die niet op je lijst staan.</li>
     </ul>
     <p>Dit wordt gekoppeld aan een <strong>willekeurige installatie-id</strong> die bij de eerste start wordt aangemaakt &mdash; niet aan je naam, e-mailadres, telefoonnummer, advertentie-id of welke hardware-id dan ook. Records uit dezelfde installatie delen die id, dus ze zijn aan elkaar te koppelen, maar niet aan jou als persoon. <strong>Er worden nooit locatiegegevens (posities, routes of coördinaten) meegestuurd.</strong> De ontvangende server legt geen IP-adressen vast. Als je delen uitzet, stoppen alle uploads onmiddellijk.</p>
     <p>Als je delen hebt aangezet vóór Perusa 0.5.0, blijft Perusa alleen de samenvattingen versturen van ritten die je beoordeelt, tot je een eenmalige vraag over ritsamenvattingen en clips beantwoordt.</p>
@@ -696,13 +705,13 @@
   <section class="policy" id="pl" lang="pl" dir="ltr">
     <p class="xnote">To jest tłumaczenie angielskiej polityki prywatności. W razie różnic obowiązuje <a href="#en">wersja angielska</a>.</p>
     <h1>Polityka prywatności</h1>
-    <p class="effective">Data wejścia w życie: 16 października 2026 &middot; Ostatnia aktualizacja: 2026-10-16</p>
+    <p class="effective">Data wejścia w życie: 20 października 2026 &middot; Ostatnia aktualizacja: 2026-10-20</p>
     <div class="tldr"><p>Perusa to pomoc dla komfortu, która pokazuje wizualne wskazówki ruchu nad innymi aplikacjami, kiedy jedziesz jako pasażer. W skrócie: <strong>nic nie opuszcza Twojego urządzenia, o ile sam nie włączysz udostępniania, a Twoja lokalizacja nie opuszcza go nigdy.</strong></p></div>
     <h2>Dane, których aplikacja używa na Twoim urządzeniu</h2>
     <ul>
       <li><strong>Czujniki ruchu</strong> (akcelerometr, żyroskop, obrót): odczytywane bez przerwy, gdy wskazówki działają, i używane wyłącznie do poruszania wskazówkami. Nie są zapisywane ani przesyłane.</li>
       <li><strong>Lokalizacja (GPS)</strong>: używana tylko do obliczenia Twojej <strong>prędkości</strong> i <strong>kierunku jazdy</strong>, aby wskazówki pojawiały się wyłącznie wtedy, gdy naprawdę jedziesz pojazdem, i aby można było odróżnić zakręt od prostej drogi. Oba te dane są przetwarzane w pamięci, na urządzeniu. Twoja <strong>pozycja nigdy nie jest zapisywana ani przesyłana</strong> &mdash; po stronie serwera aplikacja nie wie, gdzie jesteś ani gdzie byłeś.</li>
-      <li><strong>Nazwa pakietu aplikacji na pierwszym planie</strong> (opcjonalnie): jeśli przyznasz „dostęp do historii użycia” dla automatycznego wstrzymywania, Perusa sprawdza, która aplikacja jest na pierwszym planie, aby wstrzymać wskazówki nad wybranymi przez Ciebie aplikacjami (menedżery haseł, bankowość). To sprawdzenie odbywa się na urządzeniu; nic nie jest zapisywane ani wysyłane.</li>
+      <li><strong>Nazwa pakietu aplikacji na pierwszym planie</strong> (opcjonalnie): jeśli przyznasz „dostęp do historii użycia” dla automatycznego wstrzymywania, Perusa sprawdza, która aplikacja jest na pierwszym planie, aby wstrzymać wskazówki nad wybranymi przez Ciebie aplikacjami (menedżery haseł, bankowość). To sprawdzenie odbywa się na urządzeniu; nic nie jest zapisywane ani wysyłane. Lista wybranych aplikacji pozostaje na urządzeniu; ich nazwy opuszczają je tylko wtedy, gdy włączysz „Udostępniaj dodane aplikacje” (patrz niżej).</li>
       <li><strong>Ustawienia i historia przejazdów</strong>: Twoje preferencje, oceny przejazdów i profil dostrajania są przechowywane wyłącznie w prywatnej pamięci aplikacji na Twoim urządzeniu. Podobnie licznik wersji bezpłatnej: ile bezpłatnego czasu wskazówek zużyła ta instalacja.</li>
     </ul>
     <h2>Kupno odblokowania</h2>
@@ -714,7 +723,8 @@
       <li><strong>podsumowania przejazdów</strong>, które oceniasz (wynik intensywności ruchu, Twoja ocena komfortu, każde dotknięcie „Jest gorzej” w trakcie przejazdu, znacznik trudnego przejazdu, aktywne parametry dostrajania oraz ustawienia suwaków, przy których przejazd się odbywał &mdash; intensywność, szybkość, czułość),</li>
       <li>od czasu do czasu <strong>krótki zapis ruchu</strong>: do około dwóch minut odczytów czujników ruchu telefonu (przyspieszenie i obrót) oraz prędkość i zmiany kierunku pojazdu, przy czym kierunek zaczyna się od zera i nie ma godziny. <strong>Zapis nigdy nie zawiera położenia.</strong> Zapisy czekają w telefonie, aż będzie połączony z Wi-Fi i ładowany; Perusa wysyła najwyżej 6 z jednego przejazdu i 20 MB miesięcznie, a niewysłane zapisy usuwa po 45 dniach albo od razu, gdy wyłączysz udostępnianie,</li>
       <li>liczby: ile przejazdów ukończyłeś w sumie, ile było zbyt krótkich, by je ocenić, i ile oceniłeś &mdash; zwykłe sumy, aby wysłane podsumowanie dało się czytać w odpowiedniej proporcji,</li>
-      <li>raporty o awariach i zgodności urządzeń (wersja Androida, model urządzenia, wersja aplikacji).</li>
+      <li>raporty o awariach i zgodności urządzeń (wersja Androida, model urządzenia, wersja aplikacji),</li>
+      <li><strong>tylko jeśli dodatkowo włączysz „Udostępniaj dodane aplikacje”</strong> w sekcji Automatyczne wstrzymanie (domyślnie wyłączone i wyłączane ponownie za każdym razem, gdy udostępnianie zostanie wyłączone): <strong>nazwy aplikacji z listy automatycznego wstrzymania</strong> jako nazwy pakietów (na przykład <code>com.example.bank</code>), każda wysyłana raz razem z podsumowaniem przejazdu. Używamy ich, aby dodawać aplikacje ignorujące dotknięcia pod wskazówkami do listy, którą Perusa proponuje wszystkim. Perusa nigdy nie wysyła, kiedy ani jak często używasz jakiejkolwiek aplikacji, ani nazw aplikacji spoza Twojej listy.</li>
     </ul>
     <p>Dane te są powiązane z <strong>losowym identyfikatorem instalacji</strong> utworzonym przy pierwszym uruchomieniu &mdash; nie z Twoim imieniem, adresem e-mail, numerem telefonu, identyfikatorem reklamowym ani żadnym identyfikatorem sprzętu. Zapisy z tej samej instalacji mają ten sam identyfikator, więc można je powiązać ze sobą, ale nie z Tobą jako osobą. <strong>Nigdy nie są dołączane żadne dane lokalizacji (pozycje, trasy ani współrzędne).</strong> Serwer odbierający nie zapisuje adresów IP. Wyłączenie udostępniania natychmiast zatrzymuje wszystkie przesyłania.</p>
     <p>Jeśli udostępnianie zostało włączone przed wersją Perusa 0.5.0, Perusa nadal wysyła tylko podsumowania ocenianych przejazdów, dopóki nie odpowiesz na jednorazowe pytanie o podsumowania przejazdów i zapisy ruchu.</p>
@@ -747,13 +757,13 @@
   <section class="policy" id="pt-BR" lang="pt-BR" dir="ltr">
     <p class="xnote">Esta é uma tradução da política de privacidade em inglês. Em caso de divergência, prevalece a <a href="#en">versão em inglês</a>.</p>
     <h1>Política de privacidade</h1>
-    <p class="effective">Data de vigência: 16 de outubro de 2026 &middot; Última atualização: 2026-10-16</p>
+    <p class="effective">Data de vigência: 20 de outubro de 2026 &middot; Última atualização: 2026-10-20</p>
     <div class="tldr"><p>O Perusa é um auxílio de conforto que mostra indicações de movimento visuais sobre outros apps enquanto você viaja em um veículo. Resumindo: <strong>nada sai do seu aparelho a menos que você ligue o compartilhamento, e a sua localização não sai dele nunca.</strong></p></div>
     <h2>Dados que o app usa no seu aparelho</h2>
     <ul>
       <li><strong>Sensores de movimento</strong> (acelerômetro, giroscópio, rotação): lidos continuamente enquanto as indicações estão funcionando, e usados só para mover as indicações. Não são gravados nem transmitidos.</li>
       <li><strong>Localização (GPS)</strong>: usada apenas para calcular a sua <strong>velocidade</strong> e a sua <strong>direção do deslocamento</strong>, para que as indicações apareçam só quando você realmente está viajando em um veículo e para que uma curva possa ser distinguida de uma reta. As duas são processadas na memória, no aparelho. A sua <strong>posição nunca é guardada nem transmitida</strong> &mdash; do lado do servidor o app não tem nenhum conhecimento de onde você está nem de onde você esteve.</li>
-      <li><strong>Nome do pacote do app em primeiro plano</strong> (opcional): se você conceder o “acesso ao uso” para a pausa automática, o Perusa verifica qual app está na frente para poder pausar as indicações sobre os apps que você escolher (gerenciadores de senhas, bancos). Essa verificação acontece no aparelho; nada é guardado nem enviado.</li>
+      <li><strong>Nome do pacote do app em primeiro plano</strong> (opcional): se você conceder o “acesso ao uso” para a pausa automática, o Perusa verifica qual app está na frente para poder pausar as indicações sobre os apps que você escolher (gerenciadores de senhas, bancos). Essa verificação acontece no aparelho; nada é guardado nem enviado. A lista de apps que você escolhe fica no seu aparelho; os nomes só saem dele se você ativar “Compartilhar os apps que você adiciona” (veja abaixo).</li>
       <li><strong>Ajustes e histórico de viagens</strong>: as suas preferências, as suas avaliações das viagens e o seu perfil de ajuste ficam guardados só no armazenamento privado do app, no seu aparelho. O mesmo vale para o contador da versão gratuita: quanto do tempo de indicações gratuito esta instalação já usou.</li>
     </ul>
     <h2>Comprar o desbloqueio</h2>
@@ -765,7 +775,8 @@
       <li><strong>resumos de viagem</strong> das viagens que você avalia (uma nota de intensidade de movimento, a sua avaliação de conforto, qualquer toque em “Piorando” no meio da viagem, uma marca de viagem ruim, os parâmetros de ajuste ativos e a posição dos controles com que a viagem foi feita &mdash; intensidade, velocidade, sensibilidade),</li>
       <li>de vez em quando, um <strong>trecho curto de movimento</strong>: até cerca de dois minutos de leituras dos sensores de movimento do aparelho (aceleração e rotação) e a velocidade e a mudança de direção do veículo, com a direção zerada no início e sem horário. <strong>Um trecho nunca contém uma posição.</strong> Os trechos esperam no aparelho até ele estar no Wi-Fi e carregando; o Perusa envia no máximo 6 por viagem e 20 MB por mês, e apaga os trechos não enviados depois de 45 dias ou assim que você desativa o compartilhamento,</li>
       <li>quantas viagens você concluiu no total, quantas foram curtas demais para avaliar e quantas você avaliou &mdash; totais simples, para que um resumo enviado possa ser lido na proporção certa,</li>
-      <li>relatórios de falhas e de compatibilidade de aparelhos (versão do Android, modelo do aparelho, versão do app).</li>
+      <li>relatórios de falhas e de compatibilidade de aparelhos (versão do Android, modelo do aparelho, versão do app),</li>
+      <li><strong>só se você também ativar “Compartilhar os apps que você adiciona”</strong> em Pausa automática (desativado por padrão, e desativado de novo sempre que o compartilhamento for desativado): os <strong>nomes dos apps da sua lista de Pausa automática</strong>, como nomes de pacote (por exemplo <code>com.example.bank</code>), cada um enviado uma única vez com um resumo de viagem. Usamos esses nomes para incluir na lista que o Perusa sugere a todos os apps que ignoram toques por baixo das indicações. O Perusa nunca envia quando nem com que frequência você usa um app, nem os nomes de apps que não estão na sua lista.</li>
     </ul>
     <p>Esses dados são ligados a um <strong>identificador aleatório de instalação</strong> gerado na primeira execução &mdash; não ao seu nome, e-mail, número de telefone, ID de publicidade nem a qualquer identificador de hardware. Os registros da mesma instalação compartilham esse identificador, então podem ser ligados entre si, mas não a você como pessoa. <strong>Nenhum dado de localização (posições, rotas ou coordenadas) é incluído, nunca.</strong> O servidor que recebe não registra endereços IP. Desligar o compartilhamento interrompe todos os envios na hora.</p>
     <p>Se você ativou o compartilhamento antes do Perusa 0.5.0, o Perusa continua enviando só os resumos das viagens que você avalia até você responder a uma pergunta única sobre resumos de viagem e trechos.</p>
@@ -798,13 +809,13 @@
   <section class="policy" id="pt-PT" lang="pt-PT" dir="ltr">
     <p class="xnote">Esta é uma tradução da política de privacidade em inglês. Em caso de divergência, prevalece a <a href="#en">versão em inglês</a>.</p>
     <h1>Política de privacidade</h1>
-    <p class="effective">Data de entrada em vigor: 16 de outubro de 2026 &middot; Última atualização: 2026-10-16</p>
+    <p class="effective">Data de entrada em vigor: 20 de outubro de 2026 &middot; Última atualização: 2026-10-20</p>
     <div class="tldr"><p>O Perusa é um auxílio de conforto que mostra indicações de movimento visuais sobre outras aplicações enquanto viaja num veículo. Em resumo: <strong>nada sai do seu dispositivo a menos que ligue a partilha, e a sua localização nunca sai dele.</strong></p></div>
     <h2>Dados que a aplicação utiliza no seu dispositivo</h2>
     <ul>
       <li><strong>Sensores de movimento</strong> (acelerómetro, giroscópio, rotação): são lidos continuamente enquanto as indicações estão a funcionar e servem apenas para mover as indicações. Não são gravados nem transmitidos.</li>
       <li><strong>Localização (GPS)</strong>: é utilizada apenas para calcular a sua <strong>velocidade</strong> e a sua <strong>direção do deslocamento</strong>, para que as indicações apareçam só quando está realmente a viajar num veículo e para que uma curva possa ser distinguida de uma reta. Ambas são processadas em memória, no dispositivo. A sua <strong>posição nunca é guardada nem transmitida</strong> &mdash; do lado do servidor, a aplicação não sabe onde está nem onde esteve.</li>
-      <li><strong>Nome do pacote da aplicação em primeiro plano</strong> (opcional): se conceder o «acesso de utilização» para a pausa automática, o Perusa verifica que aplicação está em primeiro plano para poder colocar as indicações em pausa sobre as aplicações que escolher (gestores de palavras-passe, bancos). Essa verificação é feita no dispositivo; nada é guardado nem enviado.</li>
+      <li><strong>Nome do pacote da aplicação em primeiro plano</strong> (opcional): se conceder o «acesso de utilização» para a pausa automática, o Perusa verifica que aplicação está em primeiro plano para poder colocar as indicações em pausa sobre as aplicações que escolher (gestores de palavras-passe, bancos). Essa verificação é feita no dispositivo; nada é guardado nem enviado. A lista de apps que escolhe fica no seu dispositivo; os nomes só saem dele se ativar «Partilhar as apps que adiciona» (ver abaixo).</li>
       <li><strong>Definições e histórico de viagens</strong>: as suas preferências, as suas avaliações das viagens e o seu perfil de ajuste ficam guardados apenas no armazenamento privado da aplicação, no seu dispositivo. O mesmo acontece com o contador da versão gratuita: quanto do tempo de indicações gratuito esta instalação já utilizou.</li>
     </ul>
     <h2>Comprar o desbloqueio</h2>
@@ -816,7 +827,8 @@
       <li><strong>resumos de viagem</strong> das viagens que avalia (uma pontuação de intensidade de movimento, a sua avaliação de conforto, quaisquer toques em «A piorar» a meio da viagem, uma marca de viagem difícil, os parâmetros de ajuste ativos e a posição dos controlos com que a viagem decorreu &mdash; intensidade, velocidade, sensibilidade),</li>
       <li>de vez em quando, um <strong>excerto curto de movimento</strong>: até cerca de dois minutos de leituras dos sensores de movimento do dispositivo (aceleração e rotação) e a velocidade e a mudança de direção do veículo, com a direção a começar em zero e sem hora. <strong>Um excerto nunca contém uma posição.</strong> Os excertos aguardam no dispositivo até este estar ligado ao Wi-Fi e a carregar; o Perusa envia no máximo 6 por viagem e 20 MB por mês, e apaga os excertos não enviados ao fim de 45 dias ou assim que desativar a partilha,</li>
       <li>quantas viagens concluiu no total, quantas foram demasiado curtas para avaliar e quantas avaliou &mdash; totais simples, para que um resumo enviado possa ser lido na proporção certa,</li>
-      <li>relatórios de falhas e de compatibilidade de dispositivos (versão do Android, modelo do dispositivo, versão da aplicação).</li>
+      <li>relatórios de falhas e de compatibilidade de dispositivos (versão do Android, modelo do dispositivo, versão da aplicação),</li>
+      <li><strong>apenas se também ativar «Partilhar as apps que adiciona»</strong> em Pausa automática (desativado por predefinição, e desativado de novo sempre que a partilha for desativada): os <strong>nomes das apps da sua lista de Pausa automática</strong>, como nomes de pacote (por exemplo <code>com.example.bank</code>), cada um enviado uma única vez com um resumo de viagem. Usamo-los para incluir na lista que o Perusa sugere a todos as apps que ignoram toques por baixo das indicações. O Perusa nunca envia quando nem com que frequência utiliza uma app, nem os nomes de apps que não estão na sua lista.</li>
     </ul>
     <p>Estes dados são ligados a um <strong>identificador aleatório de instalação</strong> gerado na primeira execução &mdash; não ao seu nome, e-mail, número de telefone, ID de publicidade nem a qualquer identificador de hardware. Os registos da mesma instalação partilham esse identificador, pelo que podem ser ligados entre si, mas não a si como pessoa. <strong>Nunca é incluído qualquer dado de localização (posições, rotas ou coordenadas).</strong> O servidor que os recebe não regista endereços IP. Desligar a partilha interrompe imediatamente todos os envios.</p>
     <p>Se ativou a partilha antes do Perusa 0.5.0, o Perusa continua a enviar apenas os resumos das viagens que avalia até responder a uma pergunta única sobre os resumos de viagem e os excertos.</p>
@@ -849,13 +861,13 @@
   <section class="policy" id="ru" lang="ru" dir="ltr">
     <p class="xnote">Это перевод англоязычной политики конфиденциальности. При расхождениях действует <a href="#en">английская версия</a>.</p>
     <h1>Политика конфиденциальности</h1>
-    <p class="effective">Дата вступления в силу: 16 октября 2026 г. &middot; Последнее обновление: 2026-10-16</p>
+    <p class="effective">Дата вступления в силу: 20 октября 2026 г. &middot; Последнее обновление: 2026-10-20</p>
     <div class="tldr"><p>Perusa — вспомогательное средство для комфорта, которое показывает визуальные подсказки движения поверх других приложений, пока вы едете пассажиром. Коротко: <strong>ничего не покидает ваше устройство, пока вы сами не включите отправку, а ваше местоположение не покидает его никогда.</strong></p></div>
     <h2>Данные, которые приложение использует на вашем устройстве</h2>
     <ul>
       <li><strong>Датчики движения</strong> (акселерометр, гироскоп, вращение): считываются непрерывно, пока работают подсказки, и используются только для того, чтобы двигать подсказки. Не записываются и не передаются.</li>
       <li><strong>Местоположение (GPS)</strong>: используется только для расчёта вашей <strong>скорости</strong> и <strong>направления движения</strong>, чтобы подсказки появлялись лишь тогда, когда вы действительно едете в транспорте, и чтобы поворот можно было отличить от прямой дороги. И то и другое обрабатывается в памяти на устройстве. Ваша <strong>позиция никогда не сохраняется и никогда не передаётся</strong> &mdash; на стороне сервера приложение не знает, где вы находитесь и где вы были.</li>
-      <li><strong>Имя пакета приложения на переднем плане</strong> (необязательно): если вы дадите «доступ к данным об использовании» для автоматической паузы, Perusa проверяет, какое приложение открыто, чтобы ставить подсказки на паузу поверх выбранных вами приложений (менеджеры паролей, банки). Эта проверка выполняется на устройстве; ничего не сохраняется и не отправляется.</li>
+      <li><strong>Имя пакета приложения на переднем плане</strong> (необязательно): если вы дадите «доступ к данным об использовании» для автоматической паузы, Perusa проверяет, какое приложение открыто, чтобы ставить подсказки на паузу поверх выбранных вами приложений (менеджеры паролей, банки). Эта проверка выполняется на устройстве; ничего не сохраняется и не отправляется. Список выбранных вами приложений хранится на устройстве; их названия покидают его, только если вы включите «Отправлять добавленные приложения» (см. ниже).</li>
       <li><strong>Настройки и история поездок</strong>: ваши настройки, оценки поездок и профиль подстройки хранятся только в частном хранилище приложения на вашем устройстве. Там же хранится счётчик бесплатной версии: сколько бесплатного времени подсказок уже использовала эта установка.</li>
     </ul>
     <h2>Покупка разблокировки</h2>
@@ -867,7 +879,8 @@
       <li><strong>сводки поездок</strong>, которые вы оцениваете (показатель интенсивности движения, вашу оценку комфорта, любые нажатия «Стало хуже» посреди поездки, отметку тяжёлой поездки, активные параметры подстройки и положение регуляторов, при которых прошла поездка &mdash; яркость, скорость, чувствительность),</li>
       <li>время от времени — <strong>короткий фрагмент движения</strong>: примерно до двух минут показаний датчиков движения телефона (ускорение и вращение), а также скорость и изменение направления транспортного средства; направление отсчитывается от нуля, время суток не записывается. <strong>Фрагмент никогда не содержит местоположения.</strong> Фрагменты ждут на телефоне, пока он не подключится к Wi-Fi и не встанет на зарядку; Perusa отправляет не больше 6 фрагментов за поездку и 20 МБ в месяц и удаляет неотправленные фрагменты через 45 дней или сразу, как только вы выключите отправку данных,</li>
       <li>сколько поездок вы совершили всего, сколько из них были слишком короткими для оценки и сколько вы оценили &mdash; простые итоги, чтобы отправленную сводку можно было читать в правильной пропорции,</li>
-      <li>отчёты о сбоях и совместимости устройств (версия Android, модель устройства, версия приложения).</li>
+      <li>отчёты о сбоях и совместимости устройств (версия Android, модель устройства, версия приложения),</li>
+      <li><strong>только если вы также включите «Отправлять добавленные приложения»</strong> в разделе «Автопауза» (по умолчанию выключено и снова выключается при каждом отключении отправки): <strong>названия приложений из вашего списка автопаузы</strong> в виде имён пакетов (например, <code>com.example.bank</code>), каждое отправляется один раз вместе со сводкой о поездке. Мы используем их, чтобы добавлять приложения, которые не принимают касания под подсказками, в список, который Perusa предлагает всем. Perusa никогда не отправляет, когда и как часто вы пользуетесь приложениями, и никогда — названия приложений, которых нет в вашем списке.</li>
     </ul>
     <p>Эти данные привязаны к <strong>случайному идентификатору установки</strong>, создаваемому при первом запуске, — не к вашему имени, адресу почты, номеру телефона, рекламному идентификатору или какому-либо идентификатору оборудования. Записи с одной и той же установки имеют один идентификатор, поэтому их можно связать друг с другом, но не с вами как с человеком. <strong>Никакие данные о местоположении (позиции, маршруты или координаты) никогда не включаются.</strong> Принимающий сервер не записывает IP-адреса. Выключение отправки немедленно прекращает все загрузки.</p>
     <p>Если вы включили отправку данных до Perusa 0.5.0, Perusa продолжает отправлять только сводки оценённых вами поездок, пока вы не ответите на разовый вопрос о сводках поездок и фрагментах.</p>
@@ -900,13 +913,13 @@
   <section class="policy" id="tr" lang="tr" dir="ltr">
     <p class="xnote">Bu, İngilizce gizlilik politikasının bir çevirisidir. Farklılık olması hâlinde <a href="#en">İngilizce sürüm</a> geçerlidir.</p>
     <h1>Gizlilik politikası</h1>
-    <p class="effective">Yürürlük tarihi: 16 Ekim 2026 &middot; Son güncelleme: 2026-10-16</p>
+    <p class="effective">Yürürlük tarihi: 20 Ekim 2026 &middot; Son güncelleme: 2026-10-20</p>
     <div class="tldr"><p>Perusa, bir araçta yolcu olarak giderken diğer uygulamaların üzerinde görsel hareket işaretleri gösteren bir konfor yardımcısıdır. Kısaca: <strong>paylaşımı kendiniz açmadığınız sürece cihazınızdan hiçbir şey çıkmaz ve konumunuz cihazdan hiç çıkmaz.</strong></p></div>
     <h2>Uygulamanın cihazınızda kullandığı veriler</h2>
     <ul>
       <li><strong>Hareket sensörleri</strong> (ivmeölçer, jiroskop, dönme): işaretler çalışırken sürekli okunur ve yalnızca işaretleri hareket ettirmek için kullanılır. Kaydedilmez, iletilmez.</li>
       <li><strong>Konum (GPS)</strong>: yalnızca <strong>hızınızı</strong> ve <strong>gidiş yönünüzü</strong> hesaplamak için kullanılır; böylece işaretler ancak gerçekten bir araçla giderken görünür ve bir dönüş düz yoldan ayırt edilebilir. Her ikisi de cihazda bellekte işlenir. <strong>Konumunuz asla saklanmaz ve asla iletilmez</strong> &mdash; uygulamanın sunucu tarafında nerede olduğunuza veya nerede bulunduğunuza dair hiçbir bilgisi yoktur.</li>
-      <li><strong>Önde olan uygulamanın paket adı</strong> (isteğe bağlı): otomatik duraklatma için “kullanım erişimi” verirseniz Perusa, hangi uygulamanın önde olduğunu denetler ve seçtiğiniz uygulamaların (parola yöneticileri, bankacılık) üzerinde işaretleri duraklatır. Bu denetim cihazda yapılır; hiçbir şey saklanmaz veya gönderilmez.</li>
+      <li><strong>Önde olan uygulamanın paket adı</strong> (isteğe bağlı): otomatik duraklatma için “kullanım erişimi” verirseniz Perusa, hangi uygulamanın önde olduğunu denetler ve seçtiğiniz uygulamaların (parola yöneticileri, bankacılık) üzerinde işaretleri duraklatır. Bu denetim cihazda yapılır; hiçbir şey saklanmaz veya gönderilmez. Seçtiğiniz uygulamaların listesi cihazınızda kalır; adları yalnızca “Eklediğiniz uygulamaları paylaşın” seçeneğini açarsanız cihazdan çıkar (aşağıya bakın).</li>
       <li><strong>Ayarlar ve yolculuk geçmişi</strong>: tercihleriniz, yolculuk değerlendirmeleriniz ve ayarlama profiliniz yalnızca cihazınızdaki uygulamaya özel depolama alanında tutulur. Ücretsiz sürümün sayacı da öyle: bu kurulumun ücretsiz işaret süresinden ne kadarını kullandığı.</li>
     </ul>
     <h2>Kilit açmayı satın alma</h2>
@@ -918,7 +931,8 @@
       <li>değerlendirdiğiniz yolculukların <strong>yolculuk özetleri</strong> (bir hareket yoğunluğu puanı, konfor değerlendirmeniz, yolculuk sırasında “Daha kötü” dokunuşlarınız, zor yolculuk işareti, etkin ayarlama parametreleri ve yolculuğun hangi kaydırıcı ayarlarıyla geçtiği &mdash; yoğunluk, hız, hassasiyet),</li>
       <li>ara sıra <strong>kısa bir hareket kaydı</strong>: telefonun hareket sensörlerinden yaklaşık iki dakikaya kadar ölçümler (ivme ve dönüş) ile aracın hızı ve yön değişimi; yön sıfırdan başlatılır ve saat bilgisi yoktur. <strong>Bir kayıt asla konum içermez.</strong> Kayıtlar, telefon Wi-Fi'ye bağlanıp şarj olana kadar telefonda bekler; Perusa bir yolculuktan en fazla 6 kayıt ve ayda en fazla 20 MB gönderir, gönderilmemiş kayıtları 45 gün sonra ya da paylaşımı kapattığınız anda siler,</li>
       <li>toplamda kaç yolculuk tamamladığınız, kaçının değerlendirilemeyecek kadar kısa olduğu ve kaçını değerlendirdiğiniz &mdash; gönderilen bir özetin doğru oranla okunabilmesi için düz toplamlar,</li>
-      <li>çökme ve cihaz uyumluluğu raporları (Android sürümü, cihaz modeli, uygulama sürümü).</li>
+      <li>çökme ve cihaz uyumluluğu raporları (Android sürümü, cihaz modeli, uygulama sürümü),</li>
+      <li><strong>yalnızca Otomatik duraklatma altında “Eklediğiniz uygulamaları paylaşın” seçeneğini de açarsanız</strong> (varsayılan olarak kapalıdır ve paylaşım her kapatıldığında yeniden kapanır): <strong>otomatik duraklatma listenizdeki uygulamaların adları</strong>, paket adı olarak (örneğin <code>com.example.bank</code>), her biri bir yolculuk özetiyle yalnızca bir kez gönderilir. Bunları, işaretlerin altında dokunmaları yok sayan uygulamaları Perusa’nın herkese önerdiği listeye eklemek için kullanırız. Perusa, herhangi bir uygulamayı ne zaman veya ne sıklıkla kullandığınızı ve listenizde olmayan uygulamaların adlarını asla göndermez.</li>
     </ul>
     <p>Bunlar ilk çalıştırmada üretilen <strong>rastgele bir kurulum kimliğine</strong> bağlanır &mdash; adınıza, e-postanıza, telefon numaranıza, reklam kimliğine veya herhangi bir donanım kimliğine değil. Aynı kurulumdan gelen kayıtlar bu kimliği paylaşır; bu nedenle birbirleriyle ilişkilendirilebilir, ancak bir kişi olarak sizinle ilişkilendirilemez. <strong>Hiçbir konum verisi (konumlar, güzergâhlar veya koordinatlar) asla dahil edilmez.</strong> Alıcı sunucu IP adreslerini günlüğe yazmaz. Paylaşımı kapatmak tüm yüklemeleri anında durdurur.</p>
     <p>Paylaşımı Perusa 0.5.0'dan önce açtıysanız Perusa, yolculuk özetleri ve kayıtlar hakkındaki tek seferlik bir soruyu yanıtlayana kadar yalnızca değerlendirdiğiniz yolculukların özetlerini göndermeye devam eder.</p>
