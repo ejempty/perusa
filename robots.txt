@@ -3,4 +3,25 @@ Allow: /
 Disallow: /bg/
 Disallow: /reader/
 
+# AI crawlers: explicitly welcome on the public pages.
+User-agent: GPTBot
+Allow: /
+Disallow: /bg/
+Disallow: /reader/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /bg/
+Disallow: /reader/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /bg/
+Disallow: /reader/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /bg/
+Disallow: /reader/
+
 Sitemap: https://ejempty.github.io/perusa/sitemap.xml
